@@ -18,20 +18,20 @@ const groups = [
     key: 'backend', 
     items: [
       { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-      { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
       { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+      { name: 'FastAPI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg' },
       { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
-      { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' }
+      { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' }
     ] 
   },
   { 
     key: 'ai_automation', 
     items: [
-      { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
       { name: 'n8n', icon: 'https://n8n.io/favicon.ico' },
+      { name: 'OpenAI', icon: 'https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg' },
       { name: 'Machine Learning', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' },
       { name: 'Computer Vision', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg' },
-      { name: 'YOLO11', icon: 'https://ultralytics.com/favicon.ico' },
+      { name: 'YOLOv5 / YOLOv8', icon: 'https://ultralytics.com/favicon.ico' },
       { name: 'LLMs', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg' }
     ] 
   },
@@ -39,9 +39,9 @@ const groups = [
     key: 'tools', 
     items: [
       { name: 'Git/GitHub', icon: 'https://img.icons8.com/color/48/000000/github.png' },
-      { name: 'SCRUM', icon: 'https://img.icons8.com/color/48/000000/jira.png' },
-      { name: 'Prisma', icon: 'https://img.icons8.com/color/48/000000/prisma-orm.png' },
+      { name: 'Jira', icon: 'https://img.icons8.com/color/48/000000/jira.png' },
       { name: 'Docker', icon: 'https://img.icons8.com/color/48/000000/docker.png' },
+      { name: 'CI/CD', icon: 'https://img.icons8.com/color/48/000000/github.png' },
       { name: 'Linux', icon: 'https://img.icons8.com/color/48/000000/linux.png' }
     ] 
   },

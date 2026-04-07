@@ -11,56 +11,9 @@ type Experience = {
   achievements: string[]
 }
 
-const experiences: Experience[] = [
-  {
-    title: 'Estagiário de Desenvolvimento de Software',
-    company: 'AllTech Digital',
-    period: 'Jul 2025 - Presente',
-    description: 'Estágio remoto focado em desenvolvimento de soluções com Inteligência Artificial e automação. Desenvolvimento de projetos reais utilizados por clientes, incluindo sistemas de IA, automação com n8n e desenvolvimento web.',
-    technologies: ['Python', 'n8n', 'Inteligência Artificial', 'Machine Learning', 'Computer Vision', 'YOLO11'],
-    achievements: [
-      'Desenvolvimento de projetos de IA utilizados por clientes reais',
-      'Implementação de soluções de automação com n8n',
-      'Criação de sistemas de Computer Vision com YOLO11',
-      'Desenvolvimento de aplicações web modernas',
-      'Trabalho remoto com equipe distribuída'
-    ]
-  },
-  {
-    title: 'Scrum Master & Desenvolvedor Frontend',
-    company: 'ErrorSquad-ABP - Sistema de Gestão Acadêmica',
-    period: '2024 - 2025',
-    description: 'Desenvolvimento de sistema web para otimizar a gestão de horários acadêmicos da FATEC Jacareí, substituindo informes impressos por plataforma digital integrada. Atuação como Scrum Master facilitando cerimônias ágeis e desenvolvimento frontend responsivo.',
-    technologies: ['JavaScript', 'React', 'Node.js', 'TypeScript', 'PostgreSQL', 'SCRUM'],
-    achievements: [
-      'Facilitação de cerimônias ágeis como Scrum Master',
-      'Desenvolvimento de sistema de gestão acadêmica completo',
-      'Digitalização de processos administrativos da instituição',
-      'Implementação de interface responsiva e intuitiva',
-      'Elaboração de documentação técnica detalhada'
-    ]
-  },
-      {
-        title: 'Scrum Master & Desenvolvedor FullStack',
-        company: 'ExceptionH4ndlers - Sistema de Visualização e Disseminação de Dados Limnológicos',
-        period: '2025',
-        description: 'Desenvolvimento de sistema complexo para análise de dados limnológicos com múltiplos bancos de dados (Furnas, Balcar, SIMA). Projeto acadêmico da FATEC Jacareí em parceria com o INPE, com arquitetura de microserviços, React + TypeScript frontend e Node.js + PostgreSQL backend, totalmente containerizado com Docker.',
-        technologies: ['TypeScript', 'React', 'Node.js', 'PostgreSQL', 'Docker', 'SCRUM', 'CI/CD', 'GitHub Actions'],
-        achievements: [
-          'Coordenação de equipe de 5 desenvolvedores como Scrum Master',
-          'Arquitetura de sistema com múltiplos bancos de dados independentes para dados limnológicos',
-          'Implementação de CI/CD com GitHub Actions e pipeline automatizado',
-          'Containerização completa com Docker Compose (3 bancos PostgreSQL)',
-          'Desenvolvimento de API RESTful com Node.js + TypeScript',
-          'Interface React responsiva com styled-components e Vite',
-          'Metodologia Scrum com Product Backlog, Sprints e Burndown Charts',
-          'Estrutura organizada: front/, server/, múltiplos bancos de dados'
-        ]
-      }
-]
-
 export default function Experience() {
   const { t } = useTranslation()
+  const experiences = t('experience.items', { returnObjects: true }) as Experience[]
   
   return (
     <section id="experience" className="section">
@@ -94,7 +47,7 @@ export default function Experience() {
                 <div className="space-y-4">
                   <h4 className="text-xl font-bold text-white flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    Principais Conquistas
+                    {t('experience.achievementsTitle')}
                   </h4>
                   <ul className="grid md:grid-cols-2 gap-3">
                     {exp.achievements.map((achievement, idx) => (
@@ -110,7 +63,7 @@ export default function Experience() {
                 <div className="space-y-4">
                   <h4 className="text-xl font-bold text-white flex items-center gap-2">
                     <div className="w-2 h-2 bg-accent rounded-full"></div>
-                    Tecnologias
+                    {t('experience.technologiesTitle')}
                   </h4>
                   <div className="flex flex-wrap gap-3">
                     {exp.technologies.map((tech, idx) => (

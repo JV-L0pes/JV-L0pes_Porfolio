@@ -2,7 +2,7 @@
 📍 <a href="https://jv-l0pes-porfolio.onrender.com" target="_blank" rel="noopener noreferrer">Acesse meu portfólio</a>
 
 <div align="center">
-  <img src="./img/pfp.jpg" alt="Profile Picture" width="200" style="border-radius: 50%"/>
+  <img src="./public/pfp.jpg" alt="Profile Picture" width="200" style="border-radius: 50%"/>
 </div>
 
 ## 🚀 Sobre o Projeto
@@ -63,23 +63,24 @@ npm run preview
 ## 📁 Estrutura do Projeto
 
 ```
+public/
+└── pfp.jpg             # Foto de perfil e favicon
+
 src/
 ├── components/          # Componentes React
 │   ├── About.tsx
 │   ├── Certifications.tsx
 │   ├── Contact.tsx
 │   ├── Education.tsx
+│   ├── Experience.tsx
 │   ├── Footer.tsx
 │   ├── Hero.tsx
 │   ├── Navbar.tsx
 │   ├── Projects.tsx
 │   ├── SectionHeader.tsx
 │   └── Skills.tsx
-├── shared/             # Recursos compartilhados
-│   ├── i18n.ts        # Configuração de internacionalização
-│   └── locales/       # Traduções
-│       ├── en.json
-│       └── pt.json
+├── shared/
+│   └── i18n.ts         # Configuração de internacionalização
 ├── App.tsx            # Componente principal
 ├── main.tsx          # Ponto de entrada
 └── styles.css        # Estilos globais
