@@ -2,8 +2,6 @@
 
 Site pessoal **one-page** com experiência, formação, projetos em destaque, visão geral de repositórios e contato. Conteúdo em **português (PT-BR)** e **inglês**, com alternância no hero.
 
-Base visual e estrutura inspiradas no template **Typefolio** (Next.js + Tailwind + componentes no estilo shadcn).
-
 ---
 
 ## Stack
@@ -54,12 +52,6 @@ Abra [http://localhost:3000](http://localhost:3000).
 4. **Deploy**.
 
 Domínio próprio: **Project → Settings → Domains**.
-
----
-
-## Licença
-
-Veja o arquivo [LICENSE](./LICENSE). O repositório inclui código derivado de template de terceiros; ao reutilizar trechos, respeite os termos da licença e a atribuição original quando aplicável.
 
 ---
 
