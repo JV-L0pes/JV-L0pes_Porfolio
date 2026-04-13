@@ -59,11 +59,16 @@ Open **[http://localhost:3000](http://localhost:3000/)** in your browser to see 
 
 ----------
 
-## ⚡ One‑Click Deployment
+## Deploy (Vercel)
 
-Deploy your website on vercel in seconds using the button below:
+Este projeto é **Next.js (App Router)** com rotas em `/api`. Na **Vercel** o build e o runtime são detectados automaticamente.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/shadcnspace/typefolio-shadcn-ui-personal-portfolio-template)
+1. Acesse [vercel.com/new](https://vercel.com/new) e entre com **GitHub**.
+2. **Import** o repositório [JV-L0pes/JV-L0pes_Porfolio](https://github.com/JV-L0pes/JV-L0pes_Porfolio).
+3. Deixe o preset **Next.js** e os comandos padrão (`Install` + `Build: next build` via `npm run build`).
+4. Clique em **Deploy**.
+
+Não é necessário `vercel.json` para o fluxo básico. Opcional: conectar domínio próprio em **Project → Settings → Domains**.
 
 ----------
 

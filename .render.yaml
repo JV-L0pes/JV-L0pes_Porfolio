@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: jv-lopes-portfolio
-    env: node
-    plan: free
-    buildCommand: npm ci && npm run build
-    startCommand: npm start
-    healthCheckPath: /
