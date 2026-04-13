@@ -73,7 +73,7 @@ const HeroSection = () => {
       <div className="container">
         <div className="">
           <div
-            className="relative h-[19rem] w-full overflow-hidden md:h-[19.5rem]"
+            className="relative h-76 w-full overflow-hidden md:h-78"
             role="region"
             aria-roledescription="carousel"
             aria-label={
@@ -99,13 +99,13 @@ const HeroSection = () => {
                     ? "transition-none"
                     : "transition-opacity duration-700 ease-in-out",
                   index === activeBanner
-                    ? "z-[1] opacity-100"
+                    ? "z-1 opacity-100"
                     : "pointer-events-none z-0 opacity-0"
                 )}
               />
             ))}
             <div
-              className="pointer-events-none absolute bottom-3 right-3 z-[5] flex gap-2"
+              className="pointer-events-none absolute bottom-3 right-3 z-5 flex gap-2"
               role="tablist"
               aria-label={
                 language === "pt" ? "Selecionar imagem do banner" : "Select banner image"
