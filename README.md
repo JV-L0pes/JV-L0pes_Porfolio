@@ -1,136 +1,69 @@
+# Portfólio — João Victor Lopes Rosa
 
-# ✨ Typefolio - Shadcn UI Personal Portfolio Template
+Site pessoal **one-page** com experiência, formação, projetos em destaque, visão geral de repositórios e contato. Conteúdo em **português (PT-BR)** e **inglês**, com alternância no hero.
 
-**Typefolio** is a **clean, minimal, and production-ready portfolio template** built with **Next.js, Tailwind CSS, and shadcn/ui**.
-
-It’s designed for **developers, designers, and creatives** who want a fast, elegant, and modern one-page website to showcase their **work, skills, and professional profile** with clarity and style.
-
-If you’re looking for a **modern Next.js portfolio or resume template** with excellent performance and a polished UI, Typefolio is a great starting point.
-
+Base visual e estrutura inspiradas no template **Typefolio** (Next.js + Tailwind + componentes no estilo shadcn).
 
 ---
 
-## ✨ Key Features
+## Stack
 
-- 🧭 One-page layout designed for personal portfolio showcases  
-- ⚡ Built with **Next.js** for smooth navigation and high performance  
-- 🎨 Styled using **Tailwind CSS** for utility-first design flexibility  
-- 🧩 Includes reusable **shadcn/ui** components  
-- 🚀 Lightning-fast loading with a minimal bundle size  
-- 📱 Fully responsive across all devices and viewports  
-- 🧱 Clean, well-organized codebase for easy editing and customization  
-- 🪶 Lightweight architecture with minimal dependencies  
-- 👤 Ideal for personal branding, portfolios, and digital CV websites
+- **Next.js 16** (App Router)
+- **React 19** + **TypeScript**
+- **Tailwind CSS 4**
+- **API Routes** (`/api/page-data`, `/api/featured-work`) para dados por idioma
 
-----------
+---
 
-## 🚀 Getting Started
+## Rodar localmente
 
-### 1️⃣ Clone the Repository
+### Clonar
 
 ```bash
-git clone https://github.com/shadcnspace/typefolio-shadcn-ui-personal-portfolio-template.git
-
+git clone https://github.com/JV-L0pes/JV-L0pes_Porfolio.git
+cd JV-L0pes_Porfolio
 ```
 
-### 2️⃣ Install Dependencies
+### Instalar e subir o dev server
 
 ```bash
 npm install
-# or
-pnpm install
-# or
-yarn install
-
-```
-
-### 3️⃣ Run the Development Server
-
-```bash
 npm run dev
-# or
-pnpm dev
-# or
-yarn dev
-
 ```
 
-Open **[http://localhost:3000](http://localhost:3000/)** in your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000).
 
-----------
+### Scripts úteis
 
-## Deploy (Vercel)
+| Comando        | Descrição              |
+|----------------|------------------------|
+| `npm run dev`  | Desenvolvimento (Turbopack) |
+| `npm run build`| Build de produção      |
+| `npm start`    | Servidor após `build`  |
+| `npm run lint` | ESLint                 |
 
-Este projeto é **Next.js (App Router)** com rotas em `/api`. Na **Vercel** o build e o runtime são detectados automaticamente.
-
-1. Acesse [vercel.com/new](https://vercel.com/new) e entre com **GitHub**.
-2. **Import** o repositório [JV-L0pes/JV-L0pes_Porfolio](https://github.com/JV-L0pes/JV-L0pes_Porfolio).
-3. Deixe o preset **Next.js** e os comandos padrão (`Install` + `Build: next build` via `npm run build`).
-4. Clique em **Deploy**.
-
-Não é necessário `vercel.json` para o fluxo básico. Opcional: conectar domínio próprio em **Project → Settings → Domains**.
-
-----------
-
-## 📄 License
-
-Crypgo is **100% free and open‑source**.  
-You are free to use it for **personal and commercial projects**.
-
-----------
-
-## 💜 Support & Community
-
-If you find this template useful:
-
--   ⭐ Star the repository
-    
--   🐛 Report issues
-    
--   🔧 Suggest improvements
-    
-
-Your support helps improve and maintain the project.
-
-----------
-<p align="center">
-  <a href="https://shadcnspace.com" target="_blank">
-    <img src="https://images.shadcnspace.com/assets/logo/shadcnspace-favicon.png" alt="shadcnspace logo" width="48" />
-  </a>
-</p>
-
-<h1 align="center">shadcn/space</h1>
-
-<p align="center">
-  Production-ready <b>shadcn/ui blocks, components, and templates</b> for modern
-  <b>React and Next.js</b> applications — built with Tailwind CSS and designed to
-  be copied, customized, and shipped. 🚀
-</p>
-
-<p align="center">
-  <a href="https://shadcnspace.com"><strong>Website</strong></a> ·
-  <a href="https://shadcnspace.com/components">Components</a> ·
-  <a href="https://shadcnspace.com/blocks">Blocks</a> ·
-  <a href="https://shadcnspace.com/templates">Templates</a> ·
-  <a href="https://shadcnspace.com/docs/getting-started/introduction">Docs</a>
-</p>
-
-<p align="center">
-<a href="https://x.com/ShadcnSpace" target="_blank">
-    <img src="https://img.shields.io/badge/X-@ShadcnSpace-white?logo=x&logoColor=white" />
-  </a>
-  <img src="https://img.shields.io/badge/license-MIT-blue" />
-</p>
-
-<p align="center">
-  <a href="https://shadcnspace.com">
-  <img
-    alt="Shadcn Space banner"
-    width="1000"
-    src="https://images.shadcnspace.com/assets/github-image.webp"
-  >
-</a>
-</p>
+**Node:** `>=20.9.0` (ver `package.json` → `engines`).
 
 ---
 
+## Deploy (Vercel)
+
+1. Acesse [vercel.com/new](https://vercel.com/new) e entre com **GitHub**.
+2. **Import** o repositório [JV-L0pes/JV-L0pes_Porfolio](https://github.com/JV-L0pes/JV-L0pes_Porfolio).
+3. Mantenha o preset **Next.js** e o build padrão (`npm run build`).
+4. **Deploy**.
+
+Domínio próprio: **Project → Settings → Domains**.
+
+---
+
+## Licença
+
+Veja o arquivo [LICENSE](./LICENSE). O repositório inclui código derivado de template de terceiros; ao reutilizar trechos, respeite os termos da licença e a atribuição original quando aplicável.
+
+---
+
+## Contato
+
+- **GitHub:** [github.com/JV-L0pes](https://github.com/JV-L0pes)
+- **E-mail:** joaovlr9@gmail.com
