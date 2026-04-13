@@ -1,110 +1,131 @@
-# João Victor Lopes Rosa - Portfólio
-📍 <a href="https://jv-l0pes-porfolio.onrender.com" target="_blank" rel="noopener noreferrer">Acesse meu portfólio</a>
 
-<div align="center">
-  <img src="./public/pfp.jpg" alt="Profile Picture" width="200" style="border-radius: 50%"/>
-</div>
+# ✨ Typefolio - Shadcn UI Personal Portfolio Template
 
-## 🚀 Sobre o Projeto
+**Typefolio** is a **clean, minimal, and production-ready portfolio template** built with **Next.js, Tailwind CSS, and shadcn/ui**.
 
-Portfólio moderno desenvolvido com React e TypeScript, representando minha evolução como desenvolvedor. Um projeto robusto e escalável que demonstra habilidades em tecnologias atuais do mercado.
+It’s designed for **developers, designers, and creatives** who want a fast, elegant, and modern one-page website to showcase their **work, skills, and professional profile** with clarity and style.
 
-### 💻 Tecnologias Utilizadas
+If you’re looking for a **modern Next.js portfolio or resume template** with excellent performance and a polished UI, Typefolio is a great starting point.
 
-**Frontend:**
-- React 18.3.1
-- TypeScript 5.5.4
-- Vite 5.4.3 (Build Tool)
-- Tailwind CSS 3.4.10
-- Framer Motion 11.0.0 (Animações)
-
-**Internacionalização:**
-- i18next 23.10.0
-- react-i18next 13.5.0
-
-**Desenvolvimento:**
-- ESLint (Linting)
-- PostCSS + Autoprefixer
-- Hot Module Replacement (HMR)
-
-### ⚡ Características
-
-- **Design Moderno**: Interface dark theme com gradientes e efeitos glow
-- **Responsivo**: Adaptável a todos os dispositivos
-- **Internacionalização**: Suporte a Português e Inglês
-- **Animações Suaves**: Transições e micro-interações com Framer Motion
-- **Performance**: Build otimizado com Vite
-- **Type Safety**: Desenvolvido com TypeScript
-- **Componentização**: Arquitetura modular e reutilizável
-
-## 🎯 Objetivos
-- Demonstrar proficiência em tecnologias modernas (React, TypeScript, Vite)
-- Criar uma base escalável para apresentar projetos futuros
-- Apresentar habilidades técnicas de forma profissional e interativa
-- Desenvolver experiência prática com ferramentas de desenvolvimento atuais
-- Estabelecer presença profissional online com portfólio de alta qualidade
-
-## 🚀 Como Executar
-
-```bash
-# Instalar dependências
-npm install
-
-# Executar em modo desenvolvimento
-npm run dev
-
-# Build para produção
-npm run build
-
-# Preview do build
-npm run preview
-```
-
-## 📁 Estrutura do Projeto
-
-```
-public/
-└── pfp.jpg             # Foto de perfil e favicon
-
-src/
-├── components/          # Componentes React
-│   ├── About.tsx
-│   ├── Certifications.tsx
-│   ├── Contact.tsx
-│   ├── Education.tsx
-│   ├── Experience.tsx
-│   ├── Footer.tsx
-│   ├── Hero.tsx
-│   ├── Navbar.tsx
-│   ├── Projects.tsx
-│   ├── SectionHeader.tsx
-│   └── Skills.tsx
-├── shared/
-│   └── i18n.ts         # Configuração de internacionalização
-├── App.tsx            # Componente principal
-├── main.tsx          # Ponto de entrada
-└── styles.css        # Estilos globais
-```
-
-## 🚀 Deploy
-
-Este projeto está hospedado no **Render** com deploy automático:
-
-- 🌐 **URL**: [jv-l0pes-portfolio.onrender.com](https://jv-l0pes-portfolio.onrender.com)
-- 🔄 **Deploy**: Automático via GitHub
-- ⚙️ **Build**: `npm install && npm run build`
-- 📁 **Publish Directory**: `dist`
-
-## 📫 Contato
-
-- 🌐 **Portfólio**: [jv-l0pes-portfolio.onrender.com](https://jv-l0pes-portfolio.onrender.com)
-- 💻 **GitHub**: [@JV-L0pes](https://github.com/JV-L0pes)
-- 📧 **Email**: joaovlr9@gmail.com
-- 💼 **LinkedIn**: [linkedin.com/in/jv-l0pes](https://www.linkedin.com/in/jv-l0pes)
-- 📱 **WhatsApp**: [12 992278428](https://wa.me/5512992278428)
 
 ---
 
-<div align="center">
-  <strong>João Victor Lopes Rosa © 2025</strong>
-</div>
+## ✨ Key Features
+
+- 🧭 One-page layout designed for personal portfolio showcases  
+- ⚡ Built with **Next.js** for smooth navigation and high performance  
+- 🎨 Styled using **Tailwind CSS** for utility-first design flexibility  
+- 🧩 Includes reusable **shadcn/ui** components  
+- 🚀 Lightning-fast loading with a minimal bundle size  
+- 📱 Fully responsive across all devices and viewports  
+- 🧱 Clean, well-organized codebase for easy editing and customization  
+- 🪶 Lightweight architecture with minimal dependencies  
+- 👤 Ideal for personal branding, portfolios, and digital CV websites
+
+----------
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/shadcnspace/typefolio-shadcn-ui-personal-portfolio-template.git
+
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+# or
+pnpm install
+# or
+yarn install
+
+```
+
+### 3️⃣ Run the Development Server
+
+```bash
+npm run dev
+# or
+pnpm dev
+# or
+yarn dev
+
+```
+
+Open **[http://localhost:3000](http://localhost:3000/)** in your browser to see the result.
+
+----------
+
+## ⚡ One‑Click Deployment
+
+Deploy your website on vercel in seconds using the button below:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/shadcnspace/typefolio-shadcn-ui-personal-portfolio-template)
+
+----------
+
+## 📄 License
+
+Crypgo is **100% free and open‑source**.  
+You are free to use it for **personal and commercial projects**.
+
+----------
+
+## 💜 Support & Community
+
+If you find this template useful:
+
+-   ⭐ Star the repository
+    
+-   🐛 Report issues
+    
+-   🔧 Suggest improvements
+    
+
+Your support helps improve and maintain the project.
+
+----------
+<p align="center">
+  <a href="https://shadcnspace.com" target="_blank">
+    <img src="https://images.shadcnspace.com/assets/logo/shadcnspace-favicon.png" alt="shadcnspace logo" width="48" />
+  </a>
+</p>
+
+<h1 align="center">shadcn/space</h1>
+
+<p align="center">
+  Production-ready <b>shadcn/ui blocks, components, and templates</b> for modern
+  <b>React and Next.js</b> applications — built with Tailwind CSS and designed to
+  be copied, customized, and shipped. 🚀
+</p>
+
+<p align="center">
+  <a href="https://shadcnspace.com"><strong>Website</strong></a> ·
+  <a href="https://shadcnspace.com/components">Components</a> ·
+  <a href="https://shadcnspace.com/blocks">Blocks</a> ·
+  <a href="https://shadcnspace.com/templates">Templates</a> ·
+  <a href="https://shadcnspace.com/docs/getting-started/introduction">Docs</a>
+</p>
+
+<p align="center">
+<a href="https://x.com/ShadcnSpace" target="_blank">
+    <img src="https://img.shields.io/badge/X-@ShadcnSpace-white?logo=x&logoColor=white" />
+  </a>
+  <img src="https://img.shields.io/badge/license-MIT-blue" />
+</p>
+
+<p align="center">
+  <a href="https://shadcnspace.com">
+  <img
+    alt="Shadcn Space banner"
+    width="1000"
+    src="https://images.shadcnspace.com/assets/github-image.webp"
+  >
+</a>
+</p>
+
+---
+
