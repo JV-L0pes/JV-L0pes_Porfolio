@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 const featureWorkPt = [
     {
         title: "aura-central-autou",
-        description: "Monorepo profissional com módulos de projetos, CRM, recrutamento, identidade e desempenho em ambiente real — interfaces React, APIs e integrações para uso interno.",
+        description: "Monorepo da AutoU com domínios de projetos, CRM, recrutamento e identidade — DDD, monólito modular, React, TypeScript, NestJS e FastAPI em produção interna.",
         roles: ["React", "TypeScript", "Node.js", "FastAPI"],
         image: "/images/feature-work/feature-img-1.png",
         url: "https://github.com/appautou/aura-central-autou",
@@ -20,7 +20,7 @@ const featureWorkPt = [
 const featureWorkEn = [
     {
         title: "aura-central-autou",
-        description: "Professional monorepo covering projects, CRM, recruiting, identity, and performance in a real internal product — React UIs, APIs, and integrations.",
+        description: "AutoU monorepo covering projects, CRM, recruiting, and identity — DDD, modular monolith, React, TypeScript, NestJS, and FastAPI in internal production.",
         roles: ["React", "TypeScript", "Node.js", "FastAPI"],
         image: "/images/feature-work/feature-img-1.png",
         url: "https://github.com/appautou/aura-central-autou",

@@ -12,7 +12,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "João Victor Lopes Rosa | Portfolio",
-  description: "Portfolio de João Victor Lopes Rosa — Full Stack Developer",
+  description:
+    "Portfolio de João Victor Lopes Rosa — Full Stack Developer com foco em produto, arquitetura de software e plataformas internas.",
 };
 
 export default function RootLayout({

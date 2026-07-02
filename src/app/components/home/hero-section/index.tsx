@@ -190,7 +190,9 @@ const HeroSection = () => {
                   João Victor Lopes Rosa
                 </h1>
                 <p className="text-violet-700 font-normal">
-                  {language === "pt" ? "Desenvolvedor Full Stack" : "Full Stack Developer"}
+                  {language === "pt"
+                    ? "Desenvolvedor Full Stack · Produto & Arquitetura"
+                    : "Full Stack Developer · Product & Architecture"}
                 </p>
                 <div className="flex items-center gap-2">
                   <Image

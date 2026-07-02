@@ -8,15 +8,14 @@ const AboutMe = () => {
   const servicesBedge = [
     "React",
     "TypeScript",
-    "Node.js",
-    "Python",
+    "NestJS",
     "FastAPI",
     "PostgreSQL",
-    "Azure AD",
-    "Jira",
-    "n8n",
-    "Machine Learning",
-    "Computer Vision",
+    "DDD",
+    "ADRs",
+    "Azure",
+    "GitHub Actions",
+    "OpenAI API",
   ];
   return (
     <section>
@@ -37,13 +36,13 @@ const AboutMe = () => {
                     : "building real-world product systems"}
                 </span>{" "}
                 {language === "pt"
-                  ? <>na <span className="border-b-2">AutoU</span>, com foco em interfaces, APIs, integrações e automação.</>
-                  : <>at <span className="border-b-2">AutoU</span>, focused on interfaces, APIs, integrations, and automation.</>}
+                  ? <>na <span className="border-b-2">AutoU</span>, com foco em arquitetura, produto, APIs e decisões técnicas com impacto real.</>
+                  : <>at <span className="border-b-2">AutoU</span>, focused on architecture, product, APIs, and technical decisions with real impact.</>}
               </h2>
               <h5 className="text-secondary font-normal">
                 {language === "pt"
-                  ? "Também atuo em projetos acadêmicos na FATEC Jacareí e em projetos próprios com IA aplicada."
-                  : "I also contribute to academic projects at FATEC Jacareí and build personal projects with applied AI."}
+                  ? "Também contribuo em projetos acadêmicos na FATEC Jacareí e em side projects de arquitetura e integração."
+                  : "I also contribute to academic projects at FATEC Jacareí and build side projects around architecture and integration."}
               </h5>
             </div>
             <div className="flex flex-col gap-4">

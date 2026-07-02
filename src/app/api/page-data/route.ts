@@ -8,9 +8,11 @@ const experienceDataPt = [
         startYear: "Dez 2025",
         endYear: "Atual",
         bulletPoints: [
-            "Atuação em monorepo orientado a DDD no projeto aura-central-autou",
-            "Implementação de SSO com Azure AD e integrações com Jira",
-            "Desenvolvimento de interfaces React e serviços FastAPI para uso interno"
+            "Principal desenvolvedor do Aura — plataforma interna para projetos, vendas, recrutamento e desempenho",
+            "Arquitetura orientada a domínios (DDD) em monorepo com React/TypeScript e FastAPI/NestJS",
+            "Separação do CRM em serviço dedicado para desacoplar deploys entre times comercial e de projetos",
+            "SSO com Azure AD, RBAC no backend, integrações com Jira e CI/CD (GitHub Actions / Azure)",
+            "Documentação de decisões arquiteturais (ADRs) e migrations deploy-safe"
         ]
     },
     {
@@ -20,9 +22,9 @@ const experienceDataPt = [
         startYear: "Jul 2025",
         endYear: "Dez 2025",
         bulletPoints: [
-            "Criação de aplicações web e automações com n8n",
-            "Desenvolvimento de APIs e fluxos de processamento de dados",
-            "Projetos com IA, YOLOv5/YOLOv8 e visão computacional"
+            "Site institucional em Next.js com captação de leads, PostgreSQL e SendGrid",
+            "APIs REST e automações com n8n para fluxos corporativos",
+            "Entrega full stack com foco em segurança (CSRF, rate limiting, validação com Zod)"
         ]
     },
     {
@@ -47,9 +49,11 @@ const experienceDataEn = [
         startYear: "Dec 2025",
         endYear: "Present",
         bulletPoints: [
-            "Working in a DDD-oriented monorepo on the aura-central-autou project",
-            "Implemented Azure AD SSO and Jira integrations",
-            "Built React interfaces and FastAPI services for internal product flows"
+            "Lead developer on Aura — internal platform for projects, sales, recruiting, and performance",
+            "Domain-driven design (DDD) in a monorepo with React/TypeScript and FastAPI/NestJS",
+            "Split CRM into a dedicated service to decouple commercial and project team deploys",
+            "Azure AD SSO, backend RBAC, Jira integrations, and CI/CD (GitHub Actions / Azure)",
+            "Architecture decision records (ADRs) and deploy-safe database migrations"
         ]
     },
     {
@@ -59,9 +63,9 @@ const experienceDataEn = [
         startYear: "Jul 2025",
         endYear: "Dec 2025",
         bulletPoints: [
-            "Built web applications and automations with n8n",
-            "Developed APIs and data-processing pipelines",
-            "Delivered AI projects with YOLOv5/YOLOv8 and computer vision"
+            "Corporate website in Next.js with lead capture, PostgreSQL, and SendGrid",
+            "REST APIs and n8n automations for business workflows",
+            "Full stack delivery with a security focus (CSRF, rate limiting, Zod validation)"
         ]
     },
     {
@@ -101,7 +105,7 @@ const projectOverviewPt = {
             name: "aura-central-autou",
             url: "https://github.com/appautou/aura-central-autou",
             description:
-                "Monorepo da AutoU com domínios de projetos, CRM, recrutamento e identidade — stack React, TypeScript, Node e FastAPI em produção interna.",
+                "Monorepo da AutoU com domínios de projetos, CRM, recrutamento e identidade — DDD, monólito modular, React, TypeScript, NestJS e FastAPI em produção interna.",
         },
         {
             name: "ArchFlow MVP",
@@ -115,7 +119,7 @@ const projectOverviewPt = {
             name: "Inbox-Copilot",
             url: "https://github.com/JV-L0pes/Inbox-Copilot",
             description:
-                "Triagem de e-mails com IA, anexos e histórico de análises — stack Next.js, TypeScript, FastAPI e OpenAI.",
+                "Triagem de e-mails com LLM via contratos estruturados (JSON Schema), anexos e histórico de análises — Next.js, TypeScript, FastAPI e OpenAI.",
         },
         {
             name: "ABP3 - Sistema de Gestão de Leads",
@@ -138,7 +142,7 @@ const projectOverviewEn = {
             name: "aura-central-autou",
             url: "https://github.com/appautou/aura-central-autou",
             description:
-                "AutoU monorepo spanning projects, CRM, recruiting, and identity — React, TypeScript, Node, and FastAPI powering internal product flows.",
+                "AutoU monorepo spanning projects, CRM, recruiting, and identity — DDD, modular monolith, React, TypeScript, NestJS, and FastAPI in internal production.",
         },
         {
             name: "ArchFlow MVP",
@@ -152,7 +156,7 @@ const projectOverviewEn = {
             name: "Inbox-Copilot",
             url: "https://github.com/JV-L0pes/Inbox-Copilot",
             description:
-                "AI-assisted email triage with attachments and analysis history — Next.js, TypeScript, FastAPI, and OpenAI.",
+                "AI-assisted email triage with structured LLM contracts (JSON Schema), attachments, and analysis history — Next.js, TypeScript, FastAPI, and OpenAI.",
         },
         {
             name: "ABP3 - Lead Management Platform",
