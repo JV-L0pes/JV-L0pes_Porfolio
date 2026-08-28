@@ -49,7 +49,7 @@ export default function Work() {
   return (
     <section id="trabalho" className="shell" style={{ paddingBlock: "clamp(4rem,8vw,7rem) 0" }}>
       <div className="sec-head">
-        <span className="mono kicker fade">01 · Projetos</span>
+        <span className="mono kicker fade">02 · Projetos</span>
         <div className="row">
           <h2 style={{ fontSize: "clamp(2rem,5.5vw,4.25rem)" }}>
             <span className="line"><span>{t("work")}</span></span>

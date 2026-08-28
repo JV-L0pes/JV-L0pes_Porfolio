@@ -5,8 +5,8 @@ import { ArrowUp } from "@/components/icons";
 import { useLanguage } from "@/lib/language-context";
 
 const NAV = [
-  { href: "#trabalho", key: "navWork" },
   { href: "#experiencia", key: "navExperience" },
+  { href: "#trabalho", key: "navWork" },
   { href: "#contato", key: "navContact" },
 ] as const;
 

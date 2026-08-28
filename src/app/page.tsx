@@ -16,8 +16,8 @@ export default function Page() {
       <main>
         <Hero />
         <Marquee />
-        <Work />
         <Experience />
+        <Work />
         <Closing />
       </main>
       <SiteFooter />

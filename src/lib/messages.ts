@@ -9,7 +9,7 @@ export type Language = "pt" | "en";
  */
 const pt = {
   // navegacao
-  navWork: "Trabalho",
+  navWork: "Projetos",
   navExperience: "Experiência",
   navContact: "Contato",
   langLabel: "Idioma",
@@ -34,7 +34,7 @@ const pt = {
   portraitAlt: "Retrato de João Victor Lopes Rosa",
 
   // secoes
-  work: "Trabalho",
+  work: "Projetos",
   experience: "Experiência",
   professional: "Profissional",
   internshipSince: "Estágio · desde 2025",
@@ -109,11 +109,10 @@ const pt = {
   expAutoURole: "Estagiário de Desenvolvimento · AutoU",
   expAutoUWhen: "Dez 2025 até hoje",
   expAutoUWhere: "Rio de Janeiro · Remoto",
-  expAutoU1: "Principal desenvolvedor de uma plataforma interna para projetos, vendas, recrutamento, timesheet e desempenho",
-  expAutoU2: "Arquitetura orientada a domínios (DDD) em monólito modular, com React/TypeScript e FastAPI/NestJS",
-  expAutoU3: "Separação do domínio comercial em serviço dedicado para desacoplar o deploy entre times",
-  expAutoU4: "Serviço centralizado de autorização (RBAC), SSO corporativo, integrações e CI/CD",
-  expAutoU5: "Documentação de decisões arquiteturais (ADRs) e migrations deploy-safe",
+  expAutoU1: "Principal desenvolvedor de uma plataforma interna usada no dia a dia por toda a empresa",
+  expAutoU2: "Respondo pela arquitetura do ecossistema e pelo caminho que leva do requisito ao ar",
+  expAutoU3: "Front em React e TypeScript, back em FastAPI e NestJS, sobre PostgreSQL em nuvem",
+  expAutoU4: "Prática de ADR, migrations deploy-safe e quality gate no CI a cada pull request",
 
   expAllTechRole: "Estagiário de Desenvolvimento · AllTechBR",
   expAllTechWhen: "Jul 2025 a Dez 2025",
@@ -149,7 +148,7 @@ const pt = {
 } as const;
 
 const en: Record<keyof typeof pt, string> = {
-  navWork: "Work",
+  navWork: "Projects",
   navExperience: "Experience",
   navContact: "Contact",
   langLabel: "Language",
@@ -172,7 +171,7 @@ const en: Record<keyof typeof pt, string> = {
   ctaWork: "See the work",
   portraitAlt: "Portrait of João Victor Lopes Rosa",
 
-  work: "Work",
+  work: "Projects",
   experience: "Experience",
   professional: "Professional",
   internshipSince: "Internship · since 2025",
@@ -242,11 +241,10 @@ const en: Record<keyof typeof pt, string> = {
   expAutoURole: "Software Development Intern · AutoU",
   expAutoUWhen: "Dec 2025 to today",
   expAutoUWhere: "Rio de Janeiro · Remote",
-  expAutoU1: "Lead developer of an internal platform for projects, sales, recruiting, timesheet and performance",
-  expAutoU2: "Domain-driven design (DDD) in a modular monolith, with React/TypeScript and FastAPI/NestJS",
-  expAutoU3: "Sales domain split into a dedicated service to decouple deploys between teams",
-  expAutoU4: "Centralised authorisation service (RBAC), corporate SSO, integrations and CI/CD",
-  expAutoU5: "Architecture decision records (ADRs) and deploy-safe migrations",
+  expAutoU1: "Lead developer of an internal platform used daily across the company",
+  expAutoU2: "I own the ecosystem architecture and the path that takes a requirement to production",
+  expAutoU3: "React and TypeScript on the front, FastAPI and NestJS on the back, over PostgreSQL in the cloud",
+  expAutoU4: "ADRs, deploy-safe migrations and a CI quality gate on every pull request",
 
   expAllTechRole: "Software Development Intern · AllTechBR",
   expAllTechWhen: "Jul 2025 to Dec 2025",
