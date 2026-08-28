@@ -38,6 +38,7 @@ const pt = {
   professional: "Profissional",
   internshipSince: "Estágio · desde 2025",
   underNda: "Sob confidencialidade",
+  ndaNote: "Código fechado. O que dá para mostrar é a decisão e o que ela mudou.",
   academic: "Acadêmico",
   fatec: "FATEC Jacareí · DSM",
   personal: "Pessoal",
@@ -81,12 +82,14 @@ const pt = {
     ". O time ficou visivelmente mais ativo, deixou de ser usuário passivo e virou proponente de melhoria.",
 
   otherWorkTitle: "Outras entregas",
+  otherWorkOutcome: "Frontend de plataforma entregue a cliente de grande porte, com 210 commits de autoria própria e entrega rastreada do requisito ao deploy.",
   otherWorkA:
     "Respondo também pelo frontend de plataformas entregues a clientes de grande porte, e contribuo em serviços de apoio como autorização centralizada e notificações. Documentação de arquitetura em C4 e ADR, migrations deploy-safe, e quality gate no CI com",
   otherWorkB: "arquivos de teste rodando a cada PR.",
 
   // academico
   quantumTitle: "Quantum CRM · 1000 Valle",
+  quantumOutcome: "Entregue em três sprints com cliente real e no ar. Maior contribuidor do time: 301 commits, contra 113 do segundo.",
   quantumDesc:
     "CRM completo para a concessionária 1000 Valle Multimarcas: leads, clientes, veículos, negociações, equipes e lojas, com dashboard operacional e analítico. Entregue em Scrum com parceiro real.",
   quantum1: "Monólito modular em NestJS com camadas explícitas, porque o produto tem contextos distintos mas não tem escala que pague microserviço.",
@@ -97,6 +100,7 @@ const pt = {
 
   // pessoal
   sqlTitle: "sql-to-diagram",
+  sqlOutcome: "Lê três dialetos de SQL, PostgreSQL, MySQL e SQL Server, e devolve o diagrama sem precisar subir o banco.",
   sqlDesc:
     "Cola um script SQL, sai um diagrama entidade-relacionamento. Detecta tabelas, chaves primárias e estrangeiras em PostgreSQL, MySQL e SQL Server. Feito por precisar ler schema alheio rápido.",
 
@@ -171,6 +175,7 @@ const en: Record<keyof typeof pt, string> = {
   professional: "Professional",
   internshipSince: "Internship · since 2025",
   underNda: "Under NDA",
+  ndaNote: "Closed source. What I can show is the decision and what it changed.",
   academic: "Academic",
   fatec: "FATEC Jacareí · DSM",
   personal: "Personal",
@@ -212,11 +217,13 @@ const en: Record<keyof typeof pt, string> = {
   outcomeC: ". The team became visibly more active, going from passive users to proposing improvements.",
 
   otherWorkTitle: "Other work",
+  otherWorkOutcome: "Frontend of a platform delivered to a large client, with 210 commits of my own authorship and delivery traced from requirement to deploy.",
   otherWorkA:
     "I also own the frontend of platforms delivered to large clients, and contribute to supporting services such as centralised authorisation and notifications. Architecture documented in C4 and ADRs, deploy-safe migrations, and a CI quality gate with",
   otherWorkB: "test files running on every PR.",
 
   quantumTitle: "Quantum CRM · 1000 Valle",
+  quantumOutcome: "Delivered in three sprints with a real client and shipped. Top contributor on the team: 301 commits against 113 for the second.",
   quantumDesc:
     "A full CRM for the 1000 Valle Multimarcas dealership: leads, customers, vehicles, deals, teams and stores, with operational and analytical dashboards. Delivered in Scrum with a real client.",
   quantum1: "Modular monolith in NestJS with explicit layers, because the product has distinct contexts but not the scale to justify microservices.",
@@ -226,6 +233,7 @@ const en: Record<keyof typeof pt, string> = {
     "Four documented ways to run it locally (Docker or native × remote or local database), so the whole team can run it without depending on whoever set it up.",
 
   sqlTitle: "sql-to-diagram",
+  sqlOutcome: "Reads three SQL dialects, PostgreSQL, MySQL and SQL Server, and returns the diagram without spinning up a database.",
   sqlDesc:
     "Paste a SQL script, get an entity-relationship diagram. Detects tables, primary and foreign keys across PostgreSQL, MySQL and SQL Server. Built out of needing to read someone else's schema fast.",
 
