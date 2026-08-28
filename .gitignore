@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# rascunhos e contexto de design, nao fazem parte do produto
+.superdesign/
+.claude/launch.json
+
+# gerados pelo next build
+AGENTS.md
+CLAUDE.md
+
+# artefatos de inspecao do navegador
+.playwright-mcp/
