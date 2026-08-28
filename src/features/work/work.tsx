@@ -5,14 +5,14 @@ import { useLanguage } from "@/lib/language-context";
 import type { MessageKey } from "@/lib/messages";
 
 const MORE = [
-  { href: "https://github.com/ExceptionH4ndlers/ABP_2DSM", label: "Dados Limnológicos · INPE" },
-  { href: "https://github.com/ArchFlowPlatform/ArchFlow", label: "ArchFlow" },
-  { href: "https://github.com/JV-L0pes/Inbox-Copilot", label: "Inbox-Copilot" },
-  { href: "https://github.com/JV-L0pes/Investment-Management-Platform", label: "AnkaFlow" },
-  { href: "https://github.com/JV-L0pes/pr-review-slack-relay", label: "pr-review-slack-relay" },
-  { href: "https://github.com/JV-L0pes/burndown-chart", label: "burndown-chart" },
-  { href: "https://github.com/JV-L0pes/warframe-arsenal-index", label: "Arsenal Index" },
-];
+  { href: "https://github.com/ExceptionH4ndlers/ABP_2DSM", label: "Dados Limnológicos · INPE", desc: "moreInpe" },
+  { href: "https://github.com/ArchFlowPlatform/ArchFlow", label: "ArchFlow", desc: "moreArchflow" },
+  { href: "https://github.com/JV-L0pes/Inbox-Copilot", label: "Inbox-Copilot", desc: "moreInbox" },
+  { href: "https://github.com/JV-L0pes/Investment-Management-Platform", label: "AnkaFlow", desc: "moreAnka" },
+  { href: "https://github.com/JV-L0pes/pr-review-slack-relay", label: "pr-review-slack-relay", desc: "moreRelay" },
+  { href: "https://github.com/JV-L0pes/burndown-chart", label: "burndown-chart", desc: "moreBurndown" },
+  { href: "https://github.com/JV-L0pes/warframe-arsenal-index", label: "Arsenal Index", desc: "moreArsenal" },
+] as const satisfies ReadonlyArray<{ href: string; label: string; desc: MessageKey }>;
 
 function Num({ value }: { value: number }) {
   return <span className="num" data-to={value}>{value}</span>;
@@ -149,15 +149,15 @@ export default function Work() {
       </div>
 
       <div className="tail fade">
-        <p className="mono" style={{ margin: "0 0 1rem", color: "var(--ash)" }}>{t("moreProjects")}</p>
-        <p className="more">
-          {MORE.map((item, i) => (
-            <span key={item.href}>
-              <a href={item.href} target="_blank" rel="noopener noreferrer">{item.label}</a>
-              {i < MORE.length - 1 ? ", " : "."}
-            </span>
+        <p className="mono" style={{ margin: "0 0 1.25rem", color: "var(--ash)" }}>{t("moreProjects")}</p>
+        <div className="more">
+          {MORE.map((item) => (
+            <a key={item.href} href={item.href} target="_blank" rel="noopener noreferrer">
+              <h3>{item.label}</h3>
+              <p>{t(item.desc)}</p>
+            </a>
           ))}
-        </p>
+        </div>
       </div>
     </section>
   );

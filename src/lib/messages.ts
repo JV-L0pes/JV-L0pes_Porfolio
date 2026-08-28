@@ -20,7 +20,11 @@ const pt = {
   // hero
   role: "Desenvolvedor Full Stack",
   location: "Jacareí, Brasil",
-  available: "Disponível",
+  railBase: "Base",
+  railToday: "Hoje",
+  railTodayValue: "Principal desenvolvedor de plataforma interna",
+  railOpen: "Aberto a",
+  railOpenValue: "Conversas sobre produto, arquitetura e plataformas internas",
   lede:
     "Construo plataforma interna em uma consultoria de tecnologia: projetos, CRM, recrutamento e desempenho. DDD em monorepo, decisões documentadas em ADR, e migrations que sobem sem derrubar ninguém.",
   ledeStrong1: "DDD em monorepo",
@@ -43,6 +47,13 @@ const pt = {
   privateLabel: "Privado",
   open: "Abrir",
   moreProjects: "Mais projetos",
+  moreInpe: "Visualização de dados coletados pelo INPE com UFRJ e Furnas, para estudo de balanço de carbono",
+  moreArchflow: "Gestão ágil orientada a arquitetura: ADRs versionados, diagramas C4 e rastreabilidade",
+  moreInbox: "Triagem de e-mail com LLM em contratos estruturados por JSON Schema",
+  moreAnka: "Gestão de carteiras de investimento com Fastify, Prisma e Next.js",
+  moreRelay: "Microserviço que leva review de pull request para onde a conversa já acontece",
+  moreBurndown: "Burndown integrado ao Trello, com velocidade de equipe e indicadores",
+  moreArsenal: "Catálogo local-first de inventário, sem conta e sem telemetria",
 
   // caso profissional
   caseTitle: "Trocar a fundação de um sistema em uso diário",
@@ -143,7 +154,11 @@ const en: Record<keyof typeof pt, string> = {
 
   role: "Full Stack Developer",
   location: "Jacareí, Brazil",
-  available: "Available",
+  railBase: "Based in",
+  railToday: "Today",
+  railTodayValue: "Lead developer of an internal platform",
+  railOpen: "Open to",
+  railOpenValue: "Conversations about product, architecture and internal platforms",
   lede:
     "I build internal platform software at a technology consultancy: projects, CRM, recruiting and performance. DDD in a monorepo, decisions recorded as ADRs, and migrations that ship without taking anyone down.",
   ledeStrong1: "DDD in a monorepo",
@@ -165,6 +180,13 @@ const en: Record<keyof typeof pt, string> = {
   privateLabel: "Private",
   open: "Open",
   moreProjects: "More projects",
+  moreInpe: "Visualising data collected by INPE with UFRJ and Furnas, for a carbon balance study",
+  moreArchflow: "Architecture-first agile tooling: versioned ADRs, C4 diagrams and traceability",
+  moreInbox: "Email triage with an LLM under contracts structured by JSON Schema",
+  moreAnka: "Investment portfolio management with Fastify, Prisma and Next.js",
+  moreRelay: "A microservice that takes pull request reviews to where the conversation already happens",
+  moreBurndown: "Burndown integrated with Trello, with team velocity and indicators",
+  moreArsenal: "A local-first inventory catalogue, no account and no telemetry",
 
   caseTitle: "Replacing the foundation of a system in daily use",
   caseIntro:

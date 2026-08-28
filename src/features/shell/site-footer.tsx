@@ -13,7 +13,7 @@ const NAV = [
 const FIND = [
   { href: "https://github.com/JV-L0pes", label: "GitHub" },
   { href: "https://www.linkedin.com/in/jv-l0pes", label: "LinkedIn" },
-  { href: "mailto:joaovlr9@gmail.com", label: "joaovlr9@gmail.com" },
+  { href: "mailto:joao.v.lopes.rosa@gmail.com", label: "joao.v.lopes.rosa@gmail.com" },
 ];
 
 /** Relogio de Jacarei. Renderiza vazio no servidor para nao divergir na hidratacao. */
