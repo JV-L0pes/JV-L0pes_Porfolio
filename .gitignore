@@ -47,3 +47,6 @@ next-env.d.ts
 # gerados pelo next build
 AGENTS.md
 CLAUDE.md
+
+# artefatos de inspecao do navegador
+.playwright-mcp/
