@@ -1,28 +1,27 @@
-import Divider from "./components/divider"
-import AboutMe from "./components/home/about-me"
-import Education from "./components/home/education"
-import Experience from "./components/home/experience"
-import FeaturedWork from "./components/home/featured-work"
-import HeroSection from "./components/home/hero-section"
-import ProjectOverview from "./components/home/project-overview"
+import Interactions from "@/components/interactions";
+import Closing from "@/features/contact/closing";
+import Experience from "@/features/experience/experience";
+import Hero from "@/features/hero/hero";
+import Marquee from "@/features/shell/marquee";
+import ScrollProgress from "@/features/shell/scroll-progress";
+import SiteFooter from "@/features/shell/site-footer";
+import TopBar from "@/features/shell/top-bar";
+import Work from "@/features/work/work";
 
-const page = () => {
+export default function Page() {
   return (
-    <main>
-      <HeroSection/>
-      <Divider/>
-      <AboutMe/>
-      <Divider/>
-      <FeaturedWork/>
-      <Divider/>
-      <Experience/>
-      <Divider/>
-      <Education/>
-      <Divider/>
-      <ProjectOverview/>
-      <Divider/>
-    </main>
-  )
+    <>
+      <ScrollProgress />
+      <TopBar />
+      <main>
+        <Hero />
+        <Marquee />
+        <Work />
+        <Experience />
+        <Closing />
+      </main>
+      <SiteFooter />
+      <Interactions />
+    </>
+  );
 }
-
-export default page

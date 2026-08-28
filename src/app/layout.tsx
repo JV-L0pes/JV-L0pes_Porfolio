@@ -6,10 +6,11 @@ import { LanguageProvider } from "@/lib/language-context";
 import { ThemeScript } from "@/components/theme-script";
 import SmoothScroll from "@/components/smooth-scroll";
 
+// sem `weight`: o eixo wdth so existe carregando a fonte como variavel,
+// e e ele que sustenta a assinatura tipografica do hero
 const archivo = Archivo({
   subsets: ["latin"],
   axes: ["wdth"],
-  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-archivo",
   display: "swap",
 });
