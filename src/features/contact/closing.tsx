@@ -20,12 +20,12 @@ export default function Closing() {
 
         <div className="fade flex flex-wrap items-center gap-6" style={{ marginTop: "clamp(1.75rem,3.5vw,3rem)" }}>
           <a
-            href="mailto:joaovlr9@gmail.com"
+            href="mailto:joao.v.lopes.rosa@gmail.com"
             className="pill"
             data-magnet
             style={{ background: "var(--paper)", color: "var(--ink)", borderColor: "var(--paper)" }}
           >
-            joaovlr9@gmail.com <ArrowRight className="arw" />
+            joao.v.lopes.rosa@gmail.com <ArrowRight className="arw" />
           </a>
           <a href="https://www.linkedin.com/in/jv-l0pes" target="_blank" rel="noopener noreferrer" className="plain">
             <span className="roll"><span><i>LinkedIn</i><i>LinkedIn</i></span></span>

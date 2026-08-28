@@ -36,7 +36,7 @@ export default function Hero() {
           </p>
 
           <div className="fade hero-cta">
-            <a href="mailto:joaovlr9@gmail.com" className="pill" data-magnet>
+            <a href="mailto:joao.v.lopes.rosa@gmail.com" className="pill" data-magnet>
               {t("ctaContact")} <ArrowRight className="arw" />
             </a>
           </div>
