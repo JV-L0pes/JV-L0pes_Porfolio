@@ -1,33 +1,42 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Archivo, Martian_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "./components/layout/header";
-import Footer from "./components/layout/footer";
+import "@/styles/ink.css";
 import { LanguageProvider } from "@/lib/language-context";
+import { ThemeScript } from "@/components/theme-script";
+import SmoothScroll from "@/components/smooth-scroll";
 
-const inter = Inter({
-  variable: "--font-inter-sans",
+const archivo = Archivo({
   subsets: ["latin"],
+  axes: ["wdth"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-archivo",
+  display: "swap",
+});
+
+const martianMono = Martian_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-martian-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "João Victor Lopes Rosa | Portfolio",
+  title: "João Victor Lopes Rosa · Arquitetura de Produto",
   description:
-    "Portfolio de João Victor Lopes Rosa — Full Stack Developer com foco em produto, arquitetura de software e plataformas internas.",
+    "Desenvolvedor full stack com foco em produto real, arquitetura de software e decisões técnicas com impacto no negócio.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang="pt-BR" className={`${archivo.variable} ${martianMono.variable}`} suppressHydrationWarning>
+      <body>
+        <ThemeScript />
         <LanguageProvider>
-          <Header/>
+          <SmoothScroll />
           {children}
-          <Footer/>
         </LanguageProvider>
       </body>
     </html>
