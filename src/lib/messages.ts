@@ -47,6 +47,13 @@ const pt = {
   privateLabel: "Privado",
   open: "Abrir",
   moreProjects: "Mais projetos",
+  moreInpe: "Visualização de dados coletados pelo INPE com UFRJ e Furnas, para estudo de balanço de carbono",
+  moreArchflow: "Gestão ágil orientada a arquitetura: ADRs versionados, diagramas C4 e rastreabilidade",
+  moreInbox: "Triagem de e-mail com LLM em contratos estruturados por JSON Schema",
+  moreAnka: "Gestão de carteiras de investimento com Fastify, Prisma e Next.js",
+  moreRelay: "Microserviço que leva review de pull request para onde a conversa já acontece",
+  moreBurndown: "Burndown integrado ao Trello, com velocidade de equipe e indicadores",
+  moreArsenal: "Catálogo local-first de inventário, sem conta e sem telemetria",
 
   // caso profissional
   caseTitle: "Trocar a fundação de um sistema em uso diário",
@@ -173,6 +180,13 @@ const en: Record<keyof typeof pt, string> = {
   privateLabel: "Private",
   open: "Open",
   moreProjects: "More projects",
+  moreInpe: "Visualising data collected by INPE with UFRJ and Furnas, for a carbon balance study",
+  moreArchflow: "Architecture-first agile tooling: versioned ADRs, C4 diagrams and traceability",
+  moreInbox: "Email triage with an LLM under contracts structured by JSON Schema",
+  moreAnka: "Investment portfolio management with Fastify, Prisma and Next.js",
+  moreRelay: "A microservice that takes pull request reviews to where the conversation already happens",
+  moreBurndown: "Burndown integrated with Trello, with team velocity and indicators",
+  moreArsenal: "A local-first inventory catalogue, no account and no telemetry",
 
   caseTitle: "Replacing the foundation of a system in daily use",
   caseIntro:
