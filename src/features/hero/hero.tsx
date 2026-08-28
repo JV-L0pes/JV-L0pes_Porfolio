@@ -1,15 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, GitHub, Instagram, LinkedIn } from "@/components/icons";
+import { ArrowRight } from "@/components/icons";
 import { useLanguage } from "@/lib/language-context";
 
-const SOCIAL = [
-  { href: "https://github.com/JV-L0pes", label: "GitHub", Icon: GitHub },
-  { href: "https://www.linkedin.com/in/jv-l0pes", label: "LinkedIn", Icon: LinkedIn },
-  { href: "https://www.instagram.com/jv_l0pez", label: "Instagram", Icon: Instagram },
-];
-
+/**
+ * Hero em duas colunas: o nome domina a esquerda, e a direita e um trilho
+ * de informacao com o retrato dentro dele.
+ *
+ * O retrato vive no trilho de proposito. Como bloco solto ao lado do nome
+ * ele ficava curto para a altura da coluna e abria um vazio; como item do
+ * trilho ele tem a largura da coluna e vira mais um dado.
+ */
 export default function Hero() {
   const { t } = useLanguage();
   const lede = t("lede");
@@ -19,52 +21,52 @@ export default function Hero() {
   return (
     <header id="top" className="shell hero">
       <div className="hero-grid">
-        <div>
-          <p className="mono meta fade" style={{ color: "var(--ash)", margin: "0 0 clamp(1.25rem,2.5vw,2rem)" }}>
-            <span>{t("role")}</span>
-            <span>{t("location")}</span>
-            <span className="live"><i />{t("available")}</span>
-          </p>
+        <div className="hero-main">
+          <p className="mono fade hero-role">{t("role")}</p>
 
           <h1 className="giant wide">
             <span className="line"><span>João</span></span>
             <span className="line"><span>Victor</span></span>
           </h1>
 
-          <p className="lede fade" style={{ margin: "clamp(1.5rem,3vw,2.25rem) 0 0" }}>
+          <p className="lede fade">
             {before}
             <strong>{strong}</strong>
             {after}
           </p>
 
-          <div className="fade flex flex-wrap items-center gap-5" style={{ marginTop: "clamp(1.5rem,3vw,2.25rem)" }}>
+          <div className="fade hero-cta">
             <a href="mailto:joaovlr9@gmail.com" className="pill" data-magnet>
               {t("ctaContact")} <ArrowRight className="arw" />
             </a>
-            <a href="#trabalho" className="plain">
-              <span className="roll"><span><i>{t("ctaWork")}</i><i>{t("ctaWork")}</i></span></span>
-            </a>
-          </div>
-
-          <div className="fade flex items-center gap-2" style={{ marginTop: "1.75rem" }}>
-            {SOCIAL.map(({ href, label, Icon }) => (
-              <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="sq" aria-label={label}>
-                <Icon />
-              </a>
-            ))}
           </div>
         </div>
 
-        <div className="portrait-wrap fade">
+        <aside className="rail fade">
+          <div>
+            <span className="lab">{t("railBase")}</span>
+            <p className="mono">{t("location")}</p>
+          </div>
+
           <Image
             className="portrait"
             src="/images/retrato.jpeg"
             alt={t("portraitAlt")}
             width={600}
-            height={800}
+            height={750}
             priority
           />
-        </div>
+
+          <div>
+            <span className="lab">{t("railToday")}</span>
+            <p>{t("railTodayValue")}</p>
+          </div>
+
+          <div>
+            <span className="lab">{t("railOpen")}</span>
+            <p>{t("railOpenValue")}</p>
+          </div>
+        </aside>
       </div>
     </header>
   );

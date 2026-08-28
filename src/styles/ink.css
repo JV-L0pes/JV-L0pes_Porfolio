@@ -89,25 +89,37 @@
 /* ---- hero ---- */
 .hero { padding-block: calc(64px + clamp(2.5rem, 6vw, 5rem)) clamp(2rem, 5vw, 4rem); }
 .giant {
-  font-size: clamp(4.4rem, 14vw, 15.5rem);
-  letter-spacing: -.062em;
+  font-size: clamp(3.6rem, 11vw, 12.5rem);
+  letter-spacing: -.058em;
   will-change: transform;
 }
-.hero-grid { display: grid; grid-template-columns: 1fr; gap: 2.25rem; }
-@media (min-width: 960px) {
-  .hero-grid { grid-template-columns: 1fr 20rem; gap: clamp(2rem, 4vw, 4rem); align-items: end; }
-}
-.portrait-wrap { overflow: hidden; }
-.portrait {
-  display: block; width: 100%; aspect-ratio: 3/4; object-fit: cover;
-  object-position: 62% 40%; filter: grayscale(1) contrast(1.08);
-  transition: filter .8s var(--soft), transform 1.2s var(--soft);
-  transform: scale(1.06);
-}
-.portrait-wrap:hover .portrait { filter: grayscale(0) contrast(1); transform: scale(1); }
-.lede { font-size: clamp(1.02rem, 1.4vw, 1.22rem); max-width: 40ch; color: var(--ash); }
+.hero-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; }
+.hero-main { display: flex; flex-direction: column; justify-content: center; }
+.hero-role { color: var(--ash); margin: 0 0 clamp(1.25rem, 2.5vw, 1.75rem); }
+.hero-cta { margin-top: clamp(1.75rem, 3vw, 2.5rem); }
+.lede { font-size: clamp(1.02rem, 1.4vw, 1.08rem); max-width: 42ch; color: var(--ash); margin: clamp(1.75rem, 3vw, 2.25rem) 0 0; }
 .lede strong { color: var(--ink); font-weight: 600; }
-.meta { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; align-items: center; }
+
+/* trilho de informacao, com o retrato dentro */
+.rail { display: flex; flex-direction: column; gap: 1.75rem; }
+.rail p { margin: 0; font-size: .9rem; }
+.lab {
+  display: block; font-family: var(--font-martian-mono), monospace;
+  font-size: .62rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ash); margin-bottom: .5rem;
+}
+.portrait {
+  display: block; width: 100%; height: auto; aspect-ratio: 4/5;
+  object-fit: cover; object-position: 60% 35%;
+  filter: grayscale(1) contrast(1.08);
+  transition: filter .8s var(--soft);
+}
+.rail:hover .portrait { filter: grayscale(0) contrast(1); }
+
+@media (min-width: 960px) {
+  .hero-grid { grid-template-columns: 1fr 16rem; gap: clamp(2.5rem, 5vw, 4rem); align-items: center; }
+  .rail { border-left: 1px solid var(--rule); padding-left: 2rem; }
+}
 
 /* ---- botoes ---- */
 .pill {
@@ -276,11 +288,11 @@ a.wrow:hover .go { transform: translateX(6px); color: var(--ink); }
     }
     @keyframes draw-rule { from { border-top-color: transparent; } to { border-top-color: var(--rule); } }
 
-    .portrait-wrap {
+    .portrait {
       animation: port linear both;
       animation-timeline: view();
       animation-range: entry 0% cover 40%;
     }
-    @keyframes port { from { clip-path: inset(14% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
+    @keyframes port { from { clip-path: inset(12% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
   }
 }

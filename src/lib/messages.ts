@@ -20,7 +20,11 @@ const pt = {
   // hero
   role: "Desenvolvedor Full Stack",
   location: "Jacareí, Brasil",
-  available: "Disponível",
+  railBase: "Base",
+  railToday: "Hoje",
+  railTodayValue: "Principal desenvolvedor de plataforma interna",
+  railOpen: "Aberto a",
+  railOpenValue: "Conversas sobre produto, arquitetura e plataformas internas",
   lede:
     "Construo plataforma interna em uma consultoria de tecnologia: projetos, CRM, recrutamento e desempenho. DDD em monorepo, decisões documentadas em ADR, e migrations que sobem sem derrubar ninguém.",
   ledeStrong1: "DDD em monorepo",
@@ -143,7 +147,11 @@ const en: Record<keyof typeof pt, string> = {
 
   role: "Full Stack Developer",
   location: "Jacareí, Brazil",
-  available: "Available",
+  railBase: "Based in",
+  railToday: "Today",
+  railTodayValue: "Lead developer of an internal platform",
+  railOpen: "Open to",
+  railOpenValue: "Conversations about product, architecture and internal platforms",
   lede:
     "I build internal platform software at a technology consultancy: projects, CRM, recruiting and performance. DDD in a monorepo, decisions recorded as ADRs, and migrations that ship without taking anyone down.",
   ledeStrong1: "DDD in a monorepo",
