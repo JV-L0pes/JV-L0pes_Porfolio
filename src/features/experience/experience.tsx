@@ -17,7 +17,7 @@ const ENTRIES: Entry[] = [
     where: "expAutoUWhere",
     role: "expAutoURole",
     current: true,
-    bullets: ["expAutoU1", "expAutoU2", "expAutoU3", "expAutoU4", "expAutoU5"],
+    bullets: ["expAutoU1", "expAutoU2", "expAutoU3", "expAutoU4"],
   },
   {
     when: "expAllTechWhen",
@@ -39,9 +39,14 @@ export default function Experience() {
 
   return (
     <section id="experiencia" className="shell" style={{ paddingBlock: "clamp(4rem,8vw,7rem) 0" }}>
-      <h2 style={{ fontSize: "clamp(2rem,5.5vw,4.25rem)", marginBottom: "clamp(1.5rem,3vw,2.5rem)" }}>
-        <span className="line"><span>{t("experience")}</span></span>
-      </h2>
+      <div className="sec-head">
+        <span className="mono kicker fade">01 · Trajetória</span>
+        <div className="row">
+          <h2 style={{ fontSize: "clamp(2rem,5.5vw,4.25rem)" }}>
+            <span className="line"><span>{t("experience")}</span></span>
+          </h2>
+        </div>
+      </div>
 
       <div className="rule-top">
         {ENTRIES.map((entry) => (

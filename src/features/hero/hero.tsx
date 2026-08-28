@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight } from "@/components/icons";
+import { ArrowRight, GitHub, LinkedIn } from "@/components/icons";
 import { useLanguage } from "@/lib/language-context";
 
 /**
@@ -65,6 +65,21 @@ export default function Hero() {
           <div>
             <span className="lab">{t("railOpen")}</span>
             <p>{t("railOpenValue")}</p>
+            <ul className="rail-links">
+              <li>
+                <a href="mailto:joao.v.lopes.rosa@gmail.com">joao.v.lopes.rosa@gmail.com</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jv-l0pes" target="_blank" rel="noopener noreferrer">
+                  <LinkedIn size={12} /> LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/JV-L0pes" target="_blank" rel="noopener noreferrer">
+                  <GitHub size={12} /> GitHub
+                </a>
+              </li>
+            </ul>
           </div>
         </aside>
       </div>

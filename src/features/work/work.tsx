@@ -27,9 +27,12 @@ function Rail({ title, sub, nda }: { title: string; sub: string; nda?: boolean }
         {sub}
       </p>
       {nda && (
-        <p className="mono fade lock" style={{ margin: "1rem 0 0" }}>
-          <Lock /> {t("underNda")}
-        </p>
+        <>
+          <p className="mono fade lock" style={{ margin: "1rem 0 0" }}>
+            <Lock /> {t("underNda")}
+          </p>
+          <p className="fade nda-note">{t("ndaNote")}</p>
+        </>
       )}
     </div>
   );
@@ -45,13 +48,16 @@ export default function Work() {
 
   return (
     <section id="trabalho" className="shell" style={{ paddingBlock: "clamp(4rem,8vw,7rem) 0" }}>
-      <div className="flex flex-wrap items-end justify-between gap-4" style={{ marginBottom: "clamp(1.5rem,3vw,2.5rem)" }}>
-        <h2 style={{ fontSize: "clamp(2rem,5.5vw,4.25rem)" }}>
-          <span className="line"><span>{t("work")}</span></span>
-        </h2>
-        <a href="https://github.com/JV-L0pes" target="_blank" rel="noopener noreferrer" className="plain mono fade">
-          GitHub <ArrowRight size={14} className="arw" />
-        </a>
+      <div className="sec-head">
+        <span className="mono kicker fade">02 · Projetos</span>
+        <div className="row">
+          <h2 style={{ fontSize: "clamp(2rem,5.5vw,4.25rem)" }}>
+            <span className="line"><span>{t("work")}</span></span>
+          </h2>
+          <a href="https://github.com/JV-L0pes" target="_blank" rel="noopener noreferrer" className="plain mono fade">
+            GitHub <ArrowRight size={14} className="arw" />
+          </a>
+        </div>
       </div>
 
       {/* ---------- profissional ---------- */}
@@ -93,6 +99,10 @@ export default function Work() {
               <p className="wdesc">
                 {t("otherWorkA")} <Num value={91} /> {t("otherWorkB")}
               </p>
+              <div className="impact">
+                <span className="lbl">{t("outcomeLabel")}</span>
+                <p>{t("otherWorkOutcome")}</p>
+              </div>
               <p className="mono stack">React · TypeScript · Java · AWS · Docker</p>
             </div>
             <span className="go mono priv">{t("privateLabel")}</span>
@@ -120,6 +130,10 @@ export default function Work() {
                 <li>{t("quantum3")}</li>
                 <li>{t("quantum4")}</li>
               </ul>
+              <div className="impact">
+                <span className="lbl">{t("outcomeLabel")}</span>
+                <p>{t("quantumOutcome")}</p>
+              </div>
               <p className="mono stack">NestJS · Next.js · Prisma · PostgreSQL · Vercel + Neon</p>
             </div>
             <span className="go mono">{t("open")} <ArrowRight size={15} className="arw" /></span>
@@ -141,6 +155,10 @@ export default function Work() {
             <div>
               <h3>{t("sqlTitle")}</h3>
               <p className="wdesc">{t("sqlDesc")}</p>
+              <div className="impact">
+                <span className="lbl">{t("outcomeLabel")}</span>
+                <p>{t("sqlOutcome")}</p>
+              </div>
               <p className="mono stack">Next.js · TypeScript · Tailwind</p>
             </div>
             <span className="go mono">{t("open")} <ArrowRight size={15} className="arw" /></span>

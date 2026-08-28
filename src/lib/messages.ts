@@ -9,7 +9,7 @@ export type Language = "pt" | "en";
  */
 const pt = {
   // navegacao
-  navWork: "Trabalho",
+  navWork: "Projetos",
   navExperience: "Experiência",
   navContact: "Contato",
   langLabel: "Idioma",
@@ -26,25 +26,27 @@ const pt = {
   railOpen: "Aberto a",
   railOpenValue: "Conversas sobre produto, arquitetura e plataformas internas",
   lede:
-    "Construo plataforma interna em uma consultoria de tecnologia: projetos, CRM, recrutamento e desempenho. DDD em monorepo, decisões documentadas em ADR, e migrations que sobem sem derrubar ninguém.",
-  ledeStrong1: "DDD em monorepo",
+    "Construo a plataforma interna que uma consultoria de tecnologia usa todo dia para tocar projetos, vendas, recrutamento e desempenho. Meu trabalho é decidir a arquitetura, justificar o tradeoff antes de codar e entregar sem derrubar quem depende do sistema.",
+  ledeStrong1: "decidir a arquitetura, justificar o tradeoff antes de codar",
   ctaContact: "Entrar em contato",
+  railReach: "Contato",
   ctaWork: "Ver o trabalho",
   portraitAlt: "Retrato de João Victor Lopes Rosa",
 
   // secoes
-  work: "Trabalho",
+  work: "Projetos",
   experience: "Experiência",
   professional: "Profissional",
   internshipSince: "Estágio · desde 2025",
   underNda: "Sob confidencialidade",
+  ndaNote: "Código fechado. O que dá para mostrar é a decisão e o que ela mudou.",
   academic: "Acadêmico",
   fatec: "FATEC Jacareí · DSM",
   personal: "Pessoal",
   openSource: "Open source",
-  production: "Produção",
-  live: "No ar",
-  privateLabel: "Privado",
+  production: "Em produção",
+  live: "Acesso público",
+  privateLabel: "Sem link público",
   open: "Abrir",
   moreProjects: "Mais projetos",
   moreInpe: "Visualização de dados coletados pelo INPE com UFRJ e Furnas, para estudo de balanço de carbono",
@@ -81,12 +83,14 @@ const pt = {
     ". O time ficou visivelmente mais ativo, deixou de ser usuário passivo e virou proponente de melhoria.",
 
   otherWorkTitle: "Outras entregas",
+  otherWorkOutcome: "Frontend de plataforma entregue a cliente de grande porte, com 210 commits de autoria própria e entrega rastreada do requisito ao deploy.",
   otherWorkA:
     "Respondo também pelo frontend de plataformas entregues a clientes de grande porte, e contribuo em serviços de apoio como autorização centralizada e notificações. Documentação de arquitetura em C4 e ADR, migrations deploy-safe, e quality gate no CI com",
   otherWorkB: "arquivos de teste rodando a cada PR.",
 
   // academico
   quantumTitle: "Quantum CRM · 1000 Valle",
+  quantumOutcome: "Entregue em três sprints com cliente real e no ar. Maior contribuidor do time: 301 commits, contra 113 do segundo.",
   quantumDesc:
     "CRM completo para a concessionária 1000 Valle Multimarcas: leads, clientes, veículos, negociações, equipes e lojas, com dashboard operacional e analítico. Entregue em Scrum com parceiro real.",
   quantum1: "Monólito modular em NestJS com camadas explícitas, porque o produto tem contextos distintos mas não tem escala que pague microserviço.",
@@ -97,6 +101,7 @@ const pt = {
 
   // pessoal
   sqlTitle: "sql-to-diagram",
+  sqlOutcome: "Lê três dialetos de SQL, PostgreSQL, MySQL e SQL Server, e devolve o diagrama sem precisar subir o banco.",
   sqlDesc:
     "Cola um script SQL, sai um diagrama entidade-relacionamento. Detecta tabelas, chaves primárias e estrangeiras em PostgreSQL, MySQL e SQL Server. Feito por precisar ler schema alheio rápido.",
 
@@ -104,11 +109,10 @@ const pt = {
   expAutoURole: "Estagiário de Desenvolvimento · AutoU",
   expAutoUWhen: "Dez 2025 até hoje",
   expAutoUWhere: "Rio de Janeiro · Remoto",
-  expAutoU1: "Principal desenvolvedor de uma plataforma interna para projetos, vendas, recrutamento, timesheet e desempenho",
-  expAutoU2: "Arquitetura orientada a domínios (DDD) em monólito modular, com React/TypeScript e FastAPI/NestJS",
-  expAutoU3: "Separação do domínio comercial em serviço dedicado para desacoplar o deploy entre times",
-  expAutoU4: "Serviço centralizado de autorização (RBAC), SSO corporativo, integrações e CI/CD",
-  expAutoU5: "Documentação de decisões arquiteturais (ADRs) e migrations deploy-safe",
+  expAutoU1: "Principal desenvolvedor de uma plataforma interna usada no dia a dia por toda a empresa",
+  expAutoU2: "Respondo pela arquitetura do ecossistema e pelo caminho que leva do requisito ao ar",
+  expAutoU3: "Front em React e TypeScript, back em FastAPI e NestJS, sobre PostgreSQL em nuvem",
+  expAutoU4: "Prática de ADR, migrations deploy-safe e quality gate no CI a cada pull request",
 
   expAllTechRole: "Estagiário de Desenvolvimento · AllTechBR",
   expAllTechWhen: "Jul 2025 a Dez 2025",
@@ -133,18 +137,18 @@ const pt = {
   contact: "Contato",
   letsTalkA: "Vamos",
   letsTalkB: "conversar",
-  colophonLabel: "Colofão",
+  colophonLabel: "Como este site foi feito",
   colophon:
     "Tipografia em Archivo, no eixo de largura variável, com Martian Mono nos rótulos. Scroll suave com Lenis, física de hover com Motion, parallax em scroll-driven CSS e troca de tema em View Transitions.",
   navigate: "Navegar",
-  findMe: "Encontrar",
+  findMe: "Contato",
   backToTop: "Voltar ao topo",
   rights: "2026 © João Victor Lopes Rosa",
   timezone: "Jacareí, BRT",
 } as const;
 
 const en: Record<keyof typeof pt, string> = {
-  navWork: "Work",
+  navWork: "Projects",
   navExperience: "Experience",
   navContact: "Contact",
   langLabel: "Language",
@@ -160,24 +164,26 @@ const en: Record<keyof typeof pt, string> = {
   railOpen: "Open to",
   railOpenValue: "Conversations about product, architecture and internal platforms",
   lede:
-    "I build internal platform software at a technology consultancy: projects, CRM, recruiting and performance. DDD in a monorepo, decisions recorded as ADRs, and migrations that ship without taking anyone down.",
-  ledeStrong1: "DDD in a monorepo",
+    "I build the internal platform a technology consultancy uses every day to run projects, sales, recruiting and performance. My job is deciding the architecture, justifying the tradeoff before writing code, and shipping without taking down the people who depend on it.",
+  ledeStrong1: "deciding the architecture, justifying the tradeoff before writing code",
   ctaContact: "Get in touch",
+  railReach: "Contact",
   ctaWork: "See the work",
   portraitAlt: "Portrait of João Victor Lopes Rosa",
 
-  work: "Work",
+  work: "Projects",
   experience: "Experience",
   professional: "Professional",
   internshipSince: "Internship · since 2025",
   underNda: "Under NDA",
+  ndaNote: "Closed source. What I can show is the decision and what it changed.",
   academic: "Academic",
   fatec: "FATEC Jacareí · DSM",
   personal: "Personal",
   openSource: "Open source",
-  production: "Production",
-  live: "Live",
-  privateLabel: "Private",
+  production: "In production",
+  live: "Publicly available",
+  privateLabel: "No public link",
   open: "Open",
   moreProjects: "More projects",
   moreInpe: "Visualising data collected by INPE with UFRJ and Furnas, for a carbon balance study",
@@ -212,11 +218,13 @@ const en: Record<keyof typeof pt, string> = {
   outcomeC: ". The team became visibly more active, going from passive users to proposing improvements.",
 
   otherWorkTitle: "Other work",
+  otherWorkOutcome: "Frontend of a platform delivered to a large client, with 210 commits of my own authorship and delivery traced from requirement to deploy.",
   otherWorkA:
     "I also own the frontend of platforms delivered to large clients, and contribute to supporting services such as centralised authorisation and notifications. Architecture documented in C4 and ADRs, deploy-safe migrations, and a CI quality gate with",
   otherWorkB: "test files running on every PR.",
 
   quantumTitle: "Quantum CRM · 1000 Valle",
+  quantumOutcome: "Delivered in three sprints with a real client and shipped. Top contributor on the team: 301 commits against 113 for the second.",
   quantumDesc:
     "A full CRM for the 1000 Valle Multimarcas dealership: leads, customers, vehicles, deals, teams and stores, with operational and analytical dashboards. Delivered in Scrum with a real client.",
   quantum1: "Modular monolith in NestJS with explicit layers, because the product has distinct contexts but not the scale to justify microservices.",
@@ -226,17 +234,17 @@ const en: Record<keyof typeof pt, string> = {
     "Four documented ways to run it locally (Docker or native × remote or local database), so the whole team can run it without depending on whoever set it up.",
 
   sqlTitle: "sql-to-diagram",
+  sqlOutcome: "Reads three SQL dialects, PostgreSQL, MySQL and SQL Server, and returns the diagram without spinning up a database.",
   sqlDesc:
     "Paste a SQL script, get an entity-relationship diagram. Detects tables, primary and foreign keys across PostgreSQL, MySQL and SQL Server. Built out of needing to read someone else's schema fast.",
 
   expAutoURole: "Software Development Intern · AutoU",
   expAutoUWhen: "Dec 2025 to today",
   expAutoUWhere: "Rio de Janeiro · Remote",
-  expAutoU1: "Lead developer of an internal platform for projects, sales, recruiting, timesheet and performance",
-  expAutoU2: "Domain-driven design (DDD) in a modular monolith, with React/TypeScript and FastAPI/NestJS",
-  expAutoU3: "Sales domain split into a dedicated service to decouple deploys between teams",
-  expAutoU4: "Centralised authorisation service (RBAC), corporate SSO, integrations and CI/CD",
-  expAutoU5: "Architecture decision records (ADRs) and deploy-safe migrations",
+  expAutoU1: "Lead developer of an internal platform used daily across the company",
+  expAutoU2: "I own the ecosystem architecture and the path that takes a requirement to production",
+  expAutoU3: "React and TypeScript on the front, FastAPI and NestJS on the back, over PostgreSQL in the cloud",
+  expAutoU4: "ADRs, deploy-safe migrations and a CI quality gate on every pull request",
 
   expAllTechRole: "Software Development Intern · AllTechBR",
   expAllTechWhen: "Jul 2025 to Dec 2025",
@@ -260,11 +268,11 @@ const en: Record<keyof typeof pt, string> = {
   contact: "Contact",
   letsTalkA: "Let's",
   letsTalkB: "talk",
-  colophonLabel: "Colophon",
+  colophonLabel: "How this site was built",
   colophon:
     "Set in Archivo on its variable width axis, with Martian Mono for labels. Smooth scroll by Lenis, hover physics by Motion, parallax in scroll-driven CSS, and theme switching via View Transitions.",
   navigate: "Navigate",
-  findMe: "Find me",
+  findMe: "Contact",
   backToTop: "Back to top",
   rights: "2026 © João Victor Lopes Rosa",
   timezone: "Jacareí, BRT",
