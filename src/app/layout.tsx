@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   title: "João Victor Lopes Rosa · Arquitetura de Produto",
   description:
     "Desenvolvedor full stack com foco em produto real, arquitetura de software e decisões técnicas com impacto no negócio.",
+  robots: "index, follow, noai, noimageai",
 };
 
 export default function RootLayout({

@@ -57,7 +57,11 @@ Domínio próprio: **Project → Settings → Domains**.
 
 ## Licença
 
-Este projeto está sob a **MIT License**. Os termos completos estão no ficheiro [`LICENSE`](LICENSE) na raiz do repositório (copyright © 2026 João Victor Lopes Rosa).
+Todos os direitos reservados. Copyright © 2026 João Victor Lopes Rosa.
+
+Código público para leitura e estudo. Não transfere direito nenhum sobre o design, a identidade visual, os textos ou o fonte.
+
+Termos completos: [`LICENSE`](LICENSE).
 
 ---
 

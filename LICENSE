@@ -1,21 +1,31 @@
-MIT License
-
+Todos os direitos reservados
 Copyright (c) 2026 João Victor Lopes Rosa
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Este repositório contém o código-fonte, o design, a tipografia aplicada, a
+identidade visual, os textos e as animações do portfólio pessoal de
+João Victor Lopes Rosa, criados por ele.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+O código é público para leitura, avaliação e estudo. Publicar o fonte não
+transfere direito nenhum sobre a obra.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Você PODE:
+  - ler o código e navegar pelo repositório;
+  - clonar e executar localmente para avaliar o trabalho;
+  - se inspirar em ideias e técnicas gerais, como faria com qualquer
+    material de estudo.
+
+Você NÃO PODE, sem autorização escrita do autor:
+  - copiar, no todo ou em parte substancial, o design, o layout, a
+    identidade visual ou os textos deste site;
+  - republicar, hospedar ou distribuir esta obra, alterada ou não;
+  - usar este material, no todo ou em parte, como portfólio próprio ou em
+    trabalho de terceiros;
+  - usar este conteúdo para treinar, ajustar ou avaliar modelos de
+    aprendizado de máquina, nem incorporá-lo a conjuntos de dados para
+    esse fim;
+  - usar o nome, a assinatura visual ou o monograma do autor.
+
+Obra protegida pela Lei 9.610/98 (Direito Autoral) e, no que couber, pela
+Lei 9.609/98 (Programa de Computador).
+
+Contato para autorização: joao.v.lopes.rosa@gmail.com
