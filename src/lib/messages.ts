@@ -105,10 +105,14 @@ const pt = {
     "Primeiro frontend completo do produto entregue em uma leva, 73 arquivos, e é a base sobre a qual o projeto seguiu.",
   archflowDesc:
     "Ferramenta de gestão ágil que trata arquitetura como parte do fluxo, não como documento à parte: decisão arquitetural, diagrama e story ficam no mesmo lugar, em vez de espalhados por três ferramentas que não conversam. Concebi o produto e entreguei o primeiro frontend completo, publicado sob o nome AgileTracker. O projeto seguiu depois com outro desenvolvedor, sobre essa base.",
-  archflow1: "Quadro Scrumban com arrastar e soltar sobre dnd-kit, em vez de lista com botão de mover.",
-  archflow2: "Estado do quadro em Zustand, fora da árvore de componentes.",
-  archflow3: "Interface montada sobre primitivas Radix, com tema claro e escuro.",
-  archflow4: "Indicadores de sprint em Chart.js, dentro da própria ferramenta.",
+  archflow1:
+    "Zustand para centralizar o estado do quadro fora da árvore de componentes, permitindo atualizações granulares sem depender de múltiplos contexts.",
+  archflow2:
+    "dnd-kit para movimentação e ordenação entre colunas, com uma API declarativa e mais controle sobre o comportamento do drag and drop.",
+  archflow3:
+    "Radix UI para partir de primitivas acessíveis e desacopladas de estilo, mantendo liberdade para implementar os temas claro e escuro.",
+  archflow4:
+    "Chart.js para transformar métricas do quadro em indicadores visuais sem construir a camada de visualização do zero.",
 
   // experiencia
   expAutoURole: "Estagiário de Desenvolvimento · AutoU",
@@ -242,10 +246,14 @@ const en: Record<keyof typeof pt, string> = {
     "The product's first complete frontend delivered in one go, 73 files, and it is the base the project carried on from.",
   archflowDesc:
     "An agile management tool that treats architecture as part of the flow rather than a document on the side: the architectural decision, the diagram and the story live in one place instead of spread across three tools that never talk to each other. I conceived the product and delivered its first complete frontend, published under the name AgileTracker. The project later carried on with another developer, on top of that base.",
-  archflow1: "Scrumban board with drag and drop over dnd-kit, rather than a list with a move button.",
-  archflow2: "Board state in Zustand, outside the component tree.",
-  archflow3: "Interface built on Radix primitives, with light and dark themes.",
-  archflow4: "Sprint indicators in Chart.js, inside the tool itself.",
+  archflow1:
+    "Zustand to keep the board state outside the component tree, allowing granular updates without depending on multiple contexts.",
+  archflow2:
+    "dnd-kit for moving and reordering across columns, with a declarative API and more control over drag and drop behaviour.",
+  archflow3:
+    "Radix UI to start from accessible primitives decoupled from styling, keeping the freedom to build the light and dark themes.",
+  archflow4:
+    "Chart.js to turn board metrics into visual indicators without building the charting layer from scratch.",
 
   expAutoURole: "Software Development Intern · AutoU",
   expAutoUWhen: "Dec 2025 to today",
