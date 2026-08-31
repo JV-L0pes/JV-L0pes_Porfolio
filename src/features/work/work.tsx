@@ -6,7 +6,7 @@ import type { MessageKey } from "@/lib/messages";
 
 const MORE = [
   { href: "https://github.com/ExceptionH4ndlers/ABP_2DSM", label: "Dados Limnológicos · INPE", desc: "moreInpe" },
-  { href: "https://github.com/ArchFlowPlatform/ArchFlow", label: "ArchFlow", desc: "moreArchflow" },
+  { href: "https://github.com/JV-L0pes/sql-to-diagram", label: "sql-to-diagram", desc: "moreSql" },
   { href: "https://github.com/JV-L0pes/Inbox-Copilot", label: "Inbox-Copilot", desc: "moreInbox" },
   { href: "https://github.com/JV-L0pes/Investment-Management-Platform", label: "AnkaFlow", desc: "moreAnka" },
   { href: "https://github.com/JV-L0pes/pr-review-slack-relay", label: "pr-review-slack-relay", desc: "moreRelay" },
@@ -146,20 +146,26 @@ export default function Work() {
         <Rail title={t("personal")} sub={t("openSource")} />
         <div className="cat-body work">
           <a
-            href="https://github.com/JV-L0pes/sql-to-diagram"
+            href="https://github.com/ArchFlowPlatform/AgileTracker-Front"
             target="_blank"
             rel="noopener noreferrer"
             className="wrow fade"
           >
             <div className="mono idx">04</div>
             <div>
-              <h3>{t("sqlTitle")}</h3>
-              <p className="wdesc">{t("sqlDesc")}</p>
+              <h3>{t("archflowTitle")}</h3>
+              <p className="wdesc">{t("archflowDesc")}</p>
+              <ul className="dec">
+                <li>{t("archflow1")}</li>
+                <li>{t("archflow2")}</li>
+                <li>{t("archflow3")}</li>
+                <li>{t("archflow4")}</li>
+              </ul>
               <div className="impact">
                 <span className="lbl">{t("outcomeLabel")}</span>
-                <p>{t("sqlOutcome")}</p>
+                <p>{t("archflowOutcome")}</p>
               </div>
-              <p className="mono stack">Next.js · TypeScript · Tailwind</p>
+              <p className="mono stack">Next.js · TypeScript · Zustand · dnd-kit · Radix · Tailwind</p>
             </div>
             <span className="go mono">{t("open")} <ArrowRight size={15} className="arw" /></span>
           </a>
