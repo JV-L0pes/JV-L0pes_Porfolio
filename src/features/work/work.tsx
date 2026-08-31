@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Lock } from "@/components/icons";
+import { ArrowRight, ArrowUpRight, Lock } from "@/components/icons";
 import { useLanguage } from "@/lib/language-context";
 import type { MessageKey } from "@/lib/messages";
 
@@ -171,8 +171,11 @@ export default function Work() {
         <div className="more">
           {MORE.map((item) => (
             <a key={item.href} href={item.href} target="_blank" rel="noopener noreferrer">
-              <h3>{item.label}</h3>
-              <p>{t(item.desc)}</p>
+              <div>
+                <h3>{item.label}</h3>
+                <p>{t(item.desc)}</p>
+              </div>
+              <ArrowUpRight className="ext" />
             </a>
           ))}
         </div>

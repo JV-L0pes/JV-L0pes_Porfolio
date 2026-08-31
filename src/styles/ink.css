@@ -255,10 +255,19 @@ a.wrow:hover .go { transform: translateX(6px); color: var(--ink); }
 .more { display: grid; grid-template-columns: 1fr; column-gap: clamp(2rem, 5vw, 4rem); }
 @media (min-width: 760px) { .more { grid-template-columns: 1fr 1fr; } }
 .more a {
-  display: block; padding: .95rem 0; border-bottom: 1px solid var(--rule);
+  /* grid em vez de block para a seta de link externo ficar na borda direita,
+     alinhada ao titulo, sem depender de float nem de margem negativa */
+  display: grid; grid-template-columns: 1fr auto; align-items: start;
+  column-gap: 1.25rem; position: relative;
+  padding: .95rem 0; border-bottom: 1px solid var(--rule);
   text-decoration: none; transition: padding-left .4s var(--ease);
 }
 .more a:hover { padding-left: .75rem; }
+.more .ext {
+  flex: none; margin-top: .1rem; color: var(--ash);
+  transition: transform .4s var(--ease), color .4s var(--ease);
+}
+.more a:hover .ext { transform: translate(3px, -3px); color: var(--ink); }
 .more h3 { margin: 0 0 .28rem; font-size: 1rem; font-weight: 600; letter-spacing: -.015em; }
 .more p { margin: 0; font-size: .86rem; color: var(--ash); line-height: 1.5; }
 
@@ -283,7 +292,6 @@ a.wrow:hover .go { transform: translateX(6px); color: var(--ink); }
 .foot a:hover { border-color: var(--ink); }
 .colo { font-size: .86rem; line-height: 1.7; max-width: 34ch; margin: 0; }
 .colo strong { color: var(--ink); font-weight: 600; }
-.clock { font-family: var(--font-martian-mono), monospace; font-size: .86rem; color: var(--ink); font-variant-numeric: tabular-nums; }
 .foot-bar {
   display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;
   justify-content: space-between; border-top: 1px solid var(--rule); padding-block: 1.25rem;

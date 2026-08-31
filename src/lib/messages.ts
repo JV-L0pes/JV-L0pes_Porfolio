@@ -144,7 +144,6 @@ const pt = {
   findMe: "Contato",
   backToTop: "Voltar ao topo",
   rights: "2026 © João Victor Lopes Rosa",
-  timezone: "Jacareí, BRT",
 } as const;
 
 const en: Record<keyof typeof pt, string> = {
@@ -275,7 +274,6 @@ const en: Record<keyof typeof pt, string> = {
   findMe: "Contact",
   backToTop: "Back to top",
   rights: "2026 © João Victor Lopes Rosa",
-  timezone: "Jacareí, BRT",
 };
 
 export type MessageKey = keyof typeof pt;
