@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { ArrowUp } from "@/components/icons";
 import { useLanguage } from "@/lib/language-context";
 
@@ -15,24 +14,6 @@ const FIND = [
   { href: "https://www.linkedin.com/in/jv-l0pes", label: "LinkedIn" },
   { href: "mailto:joao.v.lopes.rosa@gmail.com", label: "joao.v.lopes.rosa@gmail.com" },
 ];
-
-/** Relogio de Jacarei. Renderiza vazio no servidor para nao divergir na hidratacao. */
-function Clock() {
-  const [now, setNow] = useState("");
-
-  useEffect(() => {
-    const format = () =>
-      new Intl.DateTimeFormat("pt-BR", {
-        hour: "2-digit", minute: "2-digit", second: "2-digit",
-        hour12: false, timeZone: "America/Sao_Paulo",
-      }).format(new Date());
-    setNow(format());
-    const id = window.setInterval(() => setNow(format()), 1000);
-    return () => window.clearInterval(id);
-  }, []);
-
-  return <span suppressHydrationWarning>{now || "--:--:--"}</span>;
-}
 
 export default function SiteFooter() {
   const { t } = useLanguage();
@@ -65,9 +46,6 @@ export default function SiteFooter() {
       <div className="shell">
         <div className="foot-bar">
           <p className="mono" style={{ margin: 0 }}>{t("rights")}</p>
-          <p className="clock" style={{ margin: 0 }}>
-            <Clock /> <span className="mono" style={{ color: "var(--ash)" }}>{t("timezone")}</span>
-          </p>
           <a href="#top" className="totop">
             {t("backToTop")} <span className="arrw"><ArrowUp /></span>
           </a>
