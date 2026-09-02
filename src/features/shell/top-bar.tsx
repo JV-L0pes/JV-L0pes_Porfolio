@@ -1,13 +1,16 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeToggle from "@/components/theme-toggle";
 import { useLanguage } from "@/lib/language-context";
 
+/* ancoras absolutas: a barra tambem monta na pagina do estudo de caso,
+   onde "#trabalho" nao existe e precisa voltar para a home */
 const NAV = [
-  { href: "#experiencia", key: "navExperience" },
-  { href: "#trabalho", key: "navWork" },
-  { href: "#contato", key: "navContact" },
+  { href: "/#experiencia", key: "navExperience" },
+  { href: "/#trabalho", key: "navWork" },
+  { href: "/#contato", key: "navContact" },
 ] as const;
 
 /** O nome so aparece na barra depois que o titulo gigante sai da tela. */
@@ -27,15 +30,15 @@ export default function TopBar() {
     <div className={`bar${stuck ? " stuck" : ""}`}>
       <div className="shell bar-in">
         <div className="flex min-w-0 items-center gap-3">
-          <a href="#top" className="mark" aria-label={t("home")}>JV</a>
+          <Link href="/#top" className="mark" aria-label={t("home")}>JV</Link>
           <div className="late mono" aria-hidden>João Victor Lopes Rosa</div>
         </div>
 
         <nav className="mono hidden items-center gap-8 md:flex">
           {NAV.map(({ href, key }) => (
-            <a key={href} href={href} className="roll">
+            <Link key={href} href={href} className="roll">
               <span><i>{t(key)}</i><i>{t(key)}</i></span>
-            </a>
+            </Link>
           ))}
         </nav>
 

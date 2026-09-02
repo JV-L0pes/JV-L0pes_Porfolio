@@ -338,3 +338,91 @@ a.wrow:hover .go { transform: translateX(6px); color: var(--ink); }
     @keyframes port { from { clip-path: inset(12% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
   }
 }
+
+/* ==========================================================================
+   Estudo de caso
+   Mesma gramatica da secao de projetos: trilho a esquerda com numero e
+   titulo, prosa a direita. A coluna de leitura fica presa em 68ch porque
+   e texto longo, nao bloco de vitrine.
+   ========================================================================== */
+.case { padding-block: clamp(5.5rem, 10vw, 8rem) clamp(4rem, 8vw, 6rem); }
+
+.case-back {
+  display: inline-flex; align-items: center; gap: .55rem;
+  color: var(--ash); text-decoration: none;
+  transition: color .35s var(--ease);
+}
+.case-back:hover { color: var(--ink); }
+/* a mesma seta diagonal de link externo, girada para apontar de volta */
+.case-back .back-arw { transform: rotate(-135deg); transition: transform .4s var(--ease); }
+.case-back:hover .back-arw { transform: rotate(-135deg) translate(2px, -2px); }
+
+.case-head {
+  border-bottom: 2px solid var(--ink);
+  padding-block: clamp(2rem, 4vw, 3rem) clamp(2rem, 4vw, 3rem);
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+.case-head .kicker { display: block; color: var(--ash); margin-bottom: clamp(1rem, 2vw, 1.5rem); }
+
+.case-title {
+  font-size: clamp(2.1rem, 5.6vw, 4.5rem);
+  line-height: 1.02; letter-spacing: -.035em; font-weight: 800;
+  font-stretch: 112%;
+  margin: 0 0 clamp(1.25rem, 2.5vw, 1.75rem);
+  max-width: 18ch;
+}
+.case-head .lede { max-width: 58ch; margin: 0; }
+
+.case-meta {
+  display: grid; grid-template-columns: 1fr; gap: 1.1rem;
+  margin: clamp(2rem, 4vw, 2.75rem) 0 0;
+}
+@media (min-width: 700px) { .case-meta { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1040px) { .case-meta { grid-template-columns: repeat(4, 1fr); gap: 1.5rem; } }
+.case-meta dt {
+  font-size: .62rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ash); margin-bottom: .4rem;
+}
+.case-meta dd { margin: 0; font-size: .9rem; line-height: 1.45; }
+
+.case-sec {
+  display: grid; grid-template-columns: 1fr; gap: 1rem;
+  border-top: 1px solid var(--rule);
+  padding-block: clamp(2rem, 4vw, 3rem);
+}
+@media (min-width: 900px) {
+  .case-sec { grid-template-columns: 14rem 1fr; gap: clamp(2rem, 5vw, 4rem); }
+  .case-rail { position: sticky; top: 5.5rem; align-self: start; }
+}
+.case-rail span { display: block; color: var(--ash); margin-bottom: .5rem; }
+.case-rail h2 {
+  margin: 0; font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  letter-spacing: -.02em; font-weight: 700; line-height: 1.2;
+}
+
+.case-prose { max-width: 68ch; }
+.case-prose > * + * { margin-top: 1.1rem; }
+.case-prose p { margin: 0; line-height: 1.72; }
+.case-prose strong { font-weight: 700; color: var(--ink); }
+
+.case-ol, .case-ul { margin: 0; padding: 0; list-style: none; }
+.case-ol li, .case-ul li { position: relative; padding-left: 2.2rem; line-height: 1.72; }
+.case-ol li + li, .case-ul li + li { margin-top: .9rem; }
+.case-ol { counter-reset: caseopt; }
+.case-ol li::before {
+  counter-increment: caseopt; content: counter(caseopt, decimal-leading-zero);
+  position: absolute; left: 0; top: .15em;
+  font-family: var(--font-martian-mono), monospace; font-size: .68rem;
+  color: var(--ash); letter-spacing: .08em;
+}
+.case-ul li::before {
+  content: ''; position: absolute; left: .35rem; top: .72em;
+  width: .45rem; height: 1px; background: var(--ash);
+}
+
+.case-end {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 1.5rem; border-top: 2px solid var(--ink);
+  padding-top: clamp(2rem, 4vw, 3rem);
+}
+.case-end p { margin: 0; font-size: clamp(1.1rem, 2.4vw, 1.6rem); letter-spacing: -.02em; max-width: 22ch; }

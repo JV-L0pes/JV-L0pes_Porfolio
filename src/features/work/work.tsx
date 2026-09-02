@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Lock } from "@/components/icons";
 import { useLanguage } from "@/lib/language-context";
 import type { MessageKey } from "@/lib/messages";
@@ -64,7 +65,7 @@ export default function Work() {
       <div className="cat">
         <Rail title={t("professional")} sub={t("internshipSince")} nda />
         <div className="cat-body work">
-          <div className="wrow fade">
+          <Link href="/trabalho/trocar-a-fundacao" className="wrow fade">
             <div className="mono idx">01 · <span className="live"><i />{t("production")}</span></div>
             <div>
               <h3>{t("caseTitle")}</h3>
@@ -72,11 +73,6 @@ export default function Work() {
               <ul className="dec">
                 <Bullet label="caseProblemLabel">{t("caseProblem")}</Bullet>
                 <Bullet label="caseDecisionLabel">{t("caseDecision")}</Bullet>
-                <Bullet label="caseCostLabel">{t("caseCost")}</Bullet>
-                <Bullet label="caseBoundaryLabel">
-                  {t("caseBoundaryA")} <Num value={46} /> {t("caseBoundaryB")} <Num value={42} />{" "}
-                  {t("caseBoundaryC")}
-                </Bullet>
               </ul>
 
               <div className="impact">
@@ -89,8 +85,8 @@ export default function Work() {
 
               <p className="mono stack">React · TypeScript · FastAPI · NestJS · PostgreSQL · Azure</p>
             </div>
-            <span className="go mono priv">{t("privateLabel")}</span>
-          </div>
+            <span className="go mono">{t("readCase")} <ArrowRight size={15} className="arw" /></span>
+          </Link>
 
           <div className="wrow fade">
             <div className="mono idx">02</div>
