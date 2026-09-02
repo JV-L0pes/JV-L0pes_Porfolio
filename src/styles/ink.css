@@ -426,3 +426,23 @@ a.wrow:hover .go { transform: translateX(6px); color: var(--ink); }
   padding-top: clamp(2rem, 4vw, 3rem);
 }
 .case-end p { margin: 0; font-size: clamp(1.1rem, 2.4vw, 1.6rem); letter-spacing: -.02em; max-width: 22ch; }
+
+/* ---- chamada para o estudo de caso ----
+   O .go do canto superior direito e discreto de proposito nos projetos
+   menores, mas neste card ele ficava a 700px de distancia do fim do texto,
+   em cinza. Aqui a chamada desce para o fim do conteudo e ganha forma de
+   botao: contorno em repouso e preenchimento no hover, o inverso da .pill
+   do hero, para pesar sem gritar. Span, e nao <a>, porque a linha inteira
+   ja e o link. */
+.case-cta {
+  display: inline-flex; align-items: center; gap: .55rem;
+  margin-top: clamp(1.25rem, 2.5vw, 1.75rem);
+  height: 46px; padding: 0 1.35rem;
+  border: 1px solid var(--ink); border-radius: 999px;
+  font-size: .92rem; font-weight: 600; color: var(--ink);
+  transition: background .4s var(--ease), color .4s var(--ease);
+}
+a.wrow:hover .case-cta,
+a.wrow:focus-visible .case-cta {
+  background: var(--ink); color: var(--paper);
+}
