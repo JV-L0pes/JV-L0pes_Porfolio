@@ -1,12 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowUp } from "@/components/icons";
 import { useLanguage } from "@/lib/language-context";
 
 const NAV = [
-  { href: "#experiencia", key: "navExperience" },
-  { href: "#trabalho", key: "navWork" },
-  { href: "#contato", key: "navContact" },
+  { href: "/#experiencia", key: "navExperience" },
+  { href: "/#trabalho", key: "navWork" },
+  { href: "/#contato", key: "navContact" },
 ] as const;
 
 const FIND = [
@@ -27,7 +28,7 @@ export default function SiteFooter() {
         </div>
         <div>
           <h4>{t("navigate")}</h4>
-          <ul>{NAV.map(({ href, key }) => <li key={href}><a href={href}>{t(key)}</a></li>)}</ul>
+          <ul>{NAV.map(({ href, key }) => <li key={href}><Link href={href}>{t(key)}</Link></li>)}</ul>
         </div>
         <div>
           <h4>{t("findMe")}</h4>
@@ -46,9 +47,9 @@ export default function SiteFooter() {
       <div className="shell">
         <div className="foot-bar">
           <p className="mono" style={{ margin: 0 }}>{t("rights")}</p>
-          <a href="#top" className="totop">
+          <Link href="/#top" className="totop">
             {t("backToTop")} <span className="arrw"><ArrowUp /></span>
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

@@ -21,10 +21,17 @@ export default function Interactions() {
   /* ancoras internas passam pelo Lenis quando ele existe */
   useEffect(() => {
     const onClick = (event: MouseEvent) => {
-      const anchor = (event.target as HTMLElement)?.closest?.('a[href^="#"]');
+      const anchor = (event.target as HTMLElement)?.closest?.(
+        'a[href^="#"], a[href^="/#"]',
+      );
       if (!anchor) return;
-      const id = anchor.getAttribute("href");
-      if (!id || id.length < 2) return;
+      const href = anchor.getAttribute("href");
+      if (!href) return;
+      /* "/#id" so e scroll suave se ja estivermos na home; fora dela o
+         navegador precisa navegar de verdade */
+      if (href.startsWith("/#") && window.location.pathname !== "/") return;
+      const id = href.startsWith("/") ? href.slice(1) : href;
+      if (id.length < 2) return;
       const target = document.querySelector(id);
       const lenis = (window as unknown as {
         __lenis?: { scrollTo: (t: Element, o: object) => void };

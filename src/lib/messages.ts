@@ -47,6 +47,7 @@ const pt = {
   production: "Em produção",
   live: "Acesso público",
   privateLabel: "Sem link público",
+  readCase: "Ler o estudo de caso",
   open: "Abrir",
   moreProjects: "Mais projetos",
   moreInpe: "Visualização de dados coletados pelo INPE com UFRJ e Furnas, para estudo de balanço de carbono",
@@ -67,14 +68,6 @@ const pt = {
   caseDecisionLabel: "A decisão.",
   caseDecision:
     "Decidimos reconstruir do zero como serviço dedicado dentro do ecossistema, em vez de remendar por partes. Mesmo banco da plataforma, schema separado, e autorização delegada ao serviço que já existia em vez de duplicar regra de acesso.",
-  caseCostLabel: "O que custou.",
-  caseCost:
-    "Reescrever e migrar em paralelo, um serviço a mais para operar, e um contrato de API que precisou ser refeito: a primeira versão ainda carregava o formato do sistema antigo. Metade do trabalho foi o ETL, porque a base herdada estava suja e entrar com dado velho num modelo limpo é repetir o problema com outra roupa.",
-  caseBoundaryLabel: "Como fechamos a fronteira de dados.",
-  caseBoundaryA: "Entrada validada e normalizada antes de qualquer regra rodar, e saída declarada por schema em",
-  caseBoundaryB: "endpoints, com",
-  caseBoundaryC:
-    "campos explicitamente fora da serialização. Coluna nova no banco não aparece sozinha na resposta, e há quatro suítes de teste só para isso.",
   outcomeLabel: "Resultado",
   outcomeA:
     "As funções que existiam só no papel passaram a ser usadas de fato, agora dentro da plataforma que a empresa já abre todo dia. O serviço mantém cadência própria:",
@@ -192,6 +185,7 @@ const en: Record<keyof typeof pt, string> = {
   production: "In production",
   live: "Publicly available",
   privateLabel: "No public link",
+  readCase: "Read the case study",
   open: "Open",
   moreProjects: "More projects",
   moreInpe: "Visualising data collected by INPE with UFRJ and Furnas, for a carbon balance study",
@@ -211,14 +205,6 @@ const en: Record<keyof typeof pt, string> = {
   caseDecisionLabel: "The decision.",
   caseDecision:
     "We chose to rebuild from scratch as a dedicated service inside the ecosystem, rather than patch it piece by piece. Same platform database, separate schema, and authorisation delegated to the service that already existed instead of duplicating access rules.",
-  caseCostLabel: "What it cost.",
-  caseCost:
-    "Rewriting and migrating in parallel, one more service to run, and an API contract that had to be redone: the first version still carried the old system's shape. Half the work was the ETL, because the inherited database was dirty, and pouring old data into a clean model just repeats the problem in new clothes.",
-  caseBoundaryLabel: "How we closed the data boundary.",
-  caseBoundaryA: "Input validated and normalised before any rule runs, and output declared by schema across",
-  caseBoundaryB: "endpoints, with",
-  caseBoundaryC:
-    "fields explicitly excluded from serialisation. A new database column never shows up in a response on its own, and four test suites exist for that alone.",
   outcomeLabel: "Outcome",
   outcomeA:
     "Features that existed only on paper are now genuinely used, inside the platform the company already opens every day. The service keeps its own cadence:",

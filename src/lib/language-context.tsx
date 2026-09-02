@@ -39,7 +39,9 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.lang = language === "en" ? "en" : "pt-BR";
-    document.title = TITLES[language];
+    /* o titulo so pertence ao provider na home. Paginas internas declaram
+       o proprio e seriam sobrescritas por este efeito a cada troca de idioma */
+    if (window.location.pathname === "/") document.title = TITLES[language];
     try {
       window.localStorage.setItem("jv-lang", language);
     } catch {
