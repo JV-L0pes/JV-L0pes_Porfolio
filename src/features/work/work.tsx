@@ -84,8 +84,11 @@ export default function Work() {
               </div>
 
               <p className="mono stack">React · TypeScript · FastAPI · NestJS · PostgreSQL · Azure</p>
+
+              <span className="case-cta">
+                {t("readCase")} <ArrowRight size={15} className="arw" />
+              </span>
             </div>
-            <span className="go mono">{t("readCase")} <ArrowRight size={15} className="arw" /></span>
           </Link>
 
           <div className="wrow fade">
